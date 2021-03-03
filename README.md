@@ -12,6 +12,10 @@ In order to start developing an NMR-Assay-Ontology based on the [draft T-box](ht
     * extracts terms
     * merges terms into single TTL (TODO) 
 
+**Run:** 
+`cd workflows/1_extract_ext_terms/`
+`./extract_terms.sh`
+
 **TODO:** 
 * include all terms in respective extract_*.txt files
 * instruct robot to merge the `workflows/1_extract_ext_terms/extracted_*.ttl` files into a single file
