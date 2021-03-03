@@ -17,4 +17,4 @@ In order to start developing an NMR-Assay-Ontology based on the [draft T-box](ht
 `./extract_terms.sh`
 
 **TODO:** 
-* include all terms in respective extract_*.txt files
+* include CHEBI terms in  extract_chebi.txt

@@ -14283,8 +14283,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France."^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000010> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000118> "s"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000010> <http://purl.obolibrary.org/obo/IAO_0000118> "s"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <oboInOwl:hasExactSynonym> "s"^^xsd:string ;
                                             rdfs:label "second"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "sec"^^xsd:string ;
@@ -14326,18 +14326,18 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000016> <http://purl.obolibrary.org/obo/IAO_0000115> "A length unit which is equal to one thousandth of a meter or 10^[-3] m."^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "mm"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "micrometre"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "millimeter"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <oboInOwl:hasExactSynonym> "mm"^^xsd:string ;
                                             rdfs:label "millimeter"^^xsd:string ;
                                             rdfs:comment "\"A length unit which is equal to one thousandth of a meter or 10^[-3] m.\" [NIST:NIST]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000017> <http://purl.obolibrary.org/obo/IAO_0000111> "micrometer"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "micron"^^xsd:string ,
-                                                                       "micrometre"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "micron"^^xsd:string ;
                                             rdfs:comment "\"A length unit which is equal to one millionth of a meter or 10^[-6] m.\" [NIST:NIST]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "um"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "micrometre"^^xsd:string ,
+                                                                       "um"^^xsd:string ;
                                             rdfs:label "micrometer"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A length unit which is equal to one millionth of a meter or 10^[-6] m."^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
@@ -14345,13 +14345,13 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000018> <http://purl.obolibrary.org/obo/IAO_0000118> "nm"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "nanometer"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "nm"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "nanometer"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m."^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "nanometre"^^xsd:string ;
                                             rdfs:label "nanometer"^^xsd:string ;
-                                            rdfs:comment "\"A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m.\" [NIST:NIST]"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> .
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            rdfs:comment "\"A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m.\" [NIST:NIST]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000019> <oboInOwl:hasExactSynonym> "Å"^^xsd:string ;
@@ -14381,8 +14381,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:label "milligram"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A mass unit which is equal to one thousandth of a gram or 10^[-3] g."^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "mg"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000118> "mg"^^xsd:string ;
                                             rdfs:comment "\"A mass unit which is equal to one thousandth of a gram or 10^[-3] g.\" [UOC:GVG]"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000118> "mg"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "milligram"^^xsd:string .
 
 
@@ -14399,8 +14399,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "nanogram"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <oboInOwl:hasExactSynonym> "ng"^^xsd:string ;
-                                            rdfs:label "nanogram"^^xsd:string ;
                                             rdfs:comment "\"A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g.\" [UOC:GVG]"^^xsd:string ;
+                                            rdfs:label "nanogram"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "ng"^^xsd:string .
 
 
@@ -14422,8 +14422,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.\" [NIST:NIST]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "degree C"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K."^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "C"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            <oboInOwl:hasExactSynonym> "C"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "C"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "degree Celsius"^^xsd:string .
 
@@ -14452,8 +14452,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A time unit which is equal to 60 seconds.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000032> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "hour"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000032> <http://purl.obolibrary.org/obo/IAO_0000111> "hour"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             rdfs:label "hour"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "h"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "h"^^xsd:string ;
@@ -14462,8 +14462,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A time unit which is equal to 3600 seconds or 60 minutes.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000033> <http://purl.obolibrary.org/obo/IAO_0000111> "day"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+<http://purl.obolibrary.org/obo/UO_0000033> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "day"^^xsd:string ;
                                             rdfs:comment "\"A time unit which is equal to 24 hours.\" [Wikipedia:Wikipedia]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A time unit which is equal to 24 hours."^^xsd:string ;
                                             rdfs:label "day"^^xsd:string .
@@ -14472,8 +14472,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000034> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             rdfs:label "week"^^xsd:string ;
                                             rdfs:comment "\"A time unit which is equal to 7 days.\" [Wikipedia:Wikipedia]"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A time unit which is equal to 7 days."^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "week"^^xsd:string .
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "week"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A time unit which is equal to 7 days."^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000035> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
@@ -14484,8 +14484,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000036> <http://purl.obolibrary.org/obo/IAO_0000111> "year"^^xsd:string ;
-                                            rdfs:comment "\"A time unit which is equal to 12 months which in science is taken to be equal to 365.25 days.\" [Wikipedia:Wikipedia]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A time unit which is equal to 12 months which is science is taken to be equal to 365.25 days."^^xsd:string ;
+                                            rdfs:comment "\"A time unit which is equal to 12 months which in science is taken to be equal to 365.25 days.\" [Wikipedia:Wikipedia]"^^xsd:string ;
                                             rdfs:label "year"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> .
 
@@ -14500,8 +14500,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"An electric current unit current which is equal to one millionth of an ampere or 10^[-6] A.\" [UOC:GVG]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000039> <http://purl.obolibrary.org/obo/IAO_0000111> "micromole"^^xsd:string ;
-                                            rdfs:comment "\"A substance unit equal to a millionth of a mol or 10^[-6] mol.\" [NIST:NIST]"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000039> rdfs:comment "\"A substance unit equal to a millionth of a mol or 10^[-6] mol.\" [NIST:NIST]"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "micromole"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "umol"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A substance unit equal to a millionth of a mol or 10^[-6] mol."^^xsd:string ;
@@ -14509,8 +14509,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "umol"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000040> rdfs:comment "\"A substance unit equal to a thousandth of a mol or 10^[-3] mol.\" [NIST:NIST]"^^xsd:string ;
-                                            rdfs:label "millimole"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000040> rdfs:label "millimole"^^xsd:string ;
+                                            rdfs:comment "\"A substance unit equal to a thousandth of a mol or 10^[-3] mol.\" [NIST:NIST]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "mmol"^^xsd:string .
 
 
@@ -14545,25 +14545,25 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000062> <http://purl.obolibrary.org/obo/IAO_0000118> "M"^^xsd:string ;
                                             rdfs:comment "\"A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L).\" [UOC:GVG]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L)."^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            <oboInOwl:hasExactSynonym> "M"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "molar"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "M"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             rdfs:label "molar"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000063> <http://purl.obolibrary.org/obo/IAO_0000115> "A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M."^^xsd:string ;
-                                            rdfs:label "millimolar"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "mM"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "millimolar"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            rdfs:label "millimolar"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "mM"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "millimolar"^^xsd:string ;
                                             rdfs:comment "\"A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M.\" [UOC:GVG]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000064> rdfs:label "micromolar"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000118> "uM"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A unit of molarity which is equal to one millionth of a molar or 10^[-6] M."^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000064> <http://purl.obolibrary.org/obo/IAO_0000118> "uM"^^xsd:string ;
+                                            rdfs:label "micromolar"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "uM"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A unit of molarity which is equal to one millionth of a molar or 10^[-6] M."^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "micromolar"^^xsd:string ;
                                             rdfs:comment "\"A unit of molarity which is equal to one millionth of a molar or 10^[-6] M.\" [UOC:GVG]"^^xsd:string .
@@ -14572,8 +14572,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000065> <http://purl.obolibrary.org/obo/IAO_0000118> "nM"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "nanomolar"^^xsd:string ;
                                             rdfs:comment "\"A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M.\" [UOC:GVG]"^^xsd:string ;
-                                            rdfs:label "nanomolar"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M."^^xsd:string ;
+                                            rdfs:label "nanomolar"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "nM"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> .
 
@@ -14665,14 +14665,14 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 <http://purl.obolibrary.org/obo/UO_0000083> <oboInOwl:hasExactSynonym> "kg/m^[3]"^^xsd:string ;
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in kilograms divided by the volume in cubic meters.\" [UOC:GVG]"^^xsd:string ;
-                                            rdfs:label "kilogram per cubic meter"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "kilogram per cubic metre"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "kilogram per cubic metre"^^xsd:string ;
+                                            rdfs:label "kilogram per cubic meter"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000084> rdfs:label "gram per cubic centimeter"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "gram per cubic centimetre"^^xsd:string ;
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in grams divided by the volume in cubic centimeters.\" [UOC:GVG]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "gram per cubic centimetre"^^xsd:string ,
-                                                                       "g/cm^[3]"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "g/cm^[3]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000085> <oboInOwl:hasExactSynonym> "cd/m^[2]"^^xsd:string ,
@@ -14735,14 +14735,14 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000096> rdfs:label "cubic meter"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "m^[3]"^^xsd:string ;
-                                            rdfs:comment "\"A volume unit which is equal to the volume of a cube with edges one meter in length. One cubic meter equals to 1000 liters.\" [NIST:NIST]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "cubic metre"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "m^[3]"^^xsd:string ,
+                                                                       "cubic metre"^^xsd:string ;
+                                            rdfs:comment "\"A volume unit which is equal to the volume of a cube with edges one meter in length. One cubic meter equals to 1000 liters.\" [NIST:NIST]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000097> <http://purl.obolibrary.org/obo/IAO_0000111> "cubic centimeter"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml."^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <oboInOwl:hasExactSynonym> "cubic centimetre"^^xsd:string ;
                                             rdfs:label "cubic centimeter"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "cm^3"^^xsd:string ,
@@ -14762,8 +14762,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000099> <oboInOwl:hasExactSynonym> "litre"^^xsd:string ,
-                                                                       "l"^^xsd:string ,
-                                                                       "L"^^xsd:string ;
+                                                                       "L"^^xsd:string ,
+                                                                       "l"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter."^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "liter"^^xsd:string ;
@@ -14781,8 +14781,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> .
 
 
-<http://purl.obolibrary.org/obo/UO_0000101> <http://purl.obolibrary.org/obo/IAO_0000111> "microliter"^^xsd:string ;
-                                            rdfs:label "microliter"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000101> rdfs:label "microliter"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "microliter"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "ul"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A volume unit which is equal to one millionth of a liter or 10^[-6] L."^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "microlitre"^^xsd:string ,
@@ -14794,8 +14794,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000102> <oboInOwl:hasExactSynonym> "nl"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L."^^xsd:string ;
                                             rdfs:label "nanoliter"^^xsd:string ;
-                                            rdfs:comment "\"A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L.\" [NIST:NIST]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            rdfs:comment "\"A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L.\" [NIST:NIST]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "nanoliter"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "nanolitre"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "nl"^^xsd:string .
@@ -14820,8 +14820,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000106> <http://purl.obolibrary.org/obo/IAO_0000111> "hertz"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "Hz"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            rdfs:comment "\"A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.\" [NIST:NIST]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second."^^xsd:string ;
+                                            rdfs:comment "\"A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.\" [NIST:NIST]"^^xsd:string ;
                                             rdfs:label "hertz"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "s^1"^^xsd:string .
 
@@ -14831,8 +14831,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:label "newton"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000110> rdfs:label "pascal"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "Pa"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000110> <oboInOwl:hasExactSynonym> "Pa"^^xsd:string ;
+                                            rdfs:label "pascal"^^xsd:string ;
                                             rdfs:comment "\"A pressure unit which is equal to the pressure or stress on a surface caused by a force of 1 newton spread over a surface of 1 m^[2].\" [NIST:NIST]"^^xsd:string .
 
 
@@ -14857,8 +14857,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000120> rdfs:label "katal"^^xsd:string ;
-                                            rdfs:comment "\"A catalytic unit activity which is equal to the activity of a catalyst in moles per second, such as the amount of an enzyme needed to transform one mole of substrate per second.\" [NIST:NIST]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "kat"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "kat"^^xsd:string ;
+                                            rdfs:comment "\"A catalytic unit activity which is equal to the activity of a catalyst in moles per second, such as the amount of an enzyme needed to transform one mole of substrate per second.\" [NIST:NIST]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000123> rdfs:comment "\"A plane angle unit which is equal to the angle subtended at the center of a circle by an arc equal in length to the radius of the circle, approximately 57 degrees 17 minutes and 44.6 seconds.\" [NIST:NIST]"^^xsd:string ;
@@ -14881,8 +14881,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <oboInOwl:hasExactSynonym> "Ci"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000134> <oboInOwl:hasExactSynonym> "Gy"^^xsd:string ;
-                                            rdfs:comment "\"An absorbed dose unit which is equal to the absorption of one joule of radiation energy by one kilogram of matter.\" [NIST:NIST]"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000134> rdfs:comment "\"An absorbed dose unit which is equal to the absorption of one joule of radiation energy by one kilogram of matter.\" [NIST:NIST]"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "Gy"^^xsd:string ;
                                             rdfs:label "gray"^^xsd:string .
 
 
@@ -14931,13 +14931,13 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000144> <oboInOwl:hasExactSynonym> "nSv"^^xsd:string ;
-                                            rdfs:comment "\"A dose equivalent unit which is equal to one thousandth of a millionth of a sievert or 10^[-9] Sv.\" [NIST:NIST]"^^xsd:string ;
-                                            rdfs:label "nanosievert"^^xsd:string .
+                                            rdfs:label "nanosievert"^^xsd:string ;
+                                            rdfs:comment "\"A dose equivalent unit which is equal to one thousandth of a millionth of a sievert or 10^[-9] Sv.\" [NIST:NIST]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000145> rdfs:comment "\"An activity (of a radionuclide) unit which is equal to one thousandth of a curie or 10^[-3] Ci.\" [ORCBS:ORCBS]"^^xsd:string ;
-                                            rdfs:label "millicurie"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "mCi"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "mCi"^^xsd:string ;
+                                            rdfs:label "millicurie"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000146> rdfs:label "microcurie"^^xsd:string ;
@@ -14946,8 +14946,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000147> rdfs:label "disintegrations per minute"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "dpm"^^xsd:string ;
-                                            rdfs:comment "\"An activity (of a radionuclide) unit which is equal to the activity of a quantity of radioactive material in which one nucleus decays per minute or there is one atom disintegration per minute.\" [ORCBS:ORCBS]"^^xsd:string .
+                                            rdfs:comment "\"An activity (of a radionuclide) unit which is equal to the activity of a quantity of radioactive material in which one nucleus decays per minute or there is one atom disintegration per minute.\" [ORCBS:ORCBS]"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "dpm"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000148> rdfs:label "counts per minute"^^xsd:string ;
@@ -14960,8 +14960,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <oboInOwl:hasExactSynonym> "ns"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000151> rdfs:label "century"^^xsd:string ;
-                                            rdfs:comment "\"A time unit which is equal to 100 years.\" [Wikipedia:Wikipedia]"^^xsd:string .
+<http://purl.obolibrary.org/obo/UO_0000151> rdfs:comment "\"A time unit which is equal to 100 years.\" [Wikipedia:Wikipedia]"^^xsd:string ;
+                                            rdfs:label "century"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000152> rdfs:label "half life"^^xsd:string ;
@@ -14969,8 +14969,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000153> rdfs:comment "\"An illuminance unit which is equal to the illuminance produced by 1 lumen evenly spread over an area 1 foot^[2]. One footcandle is equal to 10.76 lux.\" [Wikipedia:Wikipedia]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "ft-c"^^xsd:string ;
-                                            rdfs:label "foot candle"^^xsd:string .
+                                            rdfs:label "foot candle"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "ft-c"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000155> <oboInOwl:hasExactSynonym> "watt per square metre"^^xsd:string ;
@@ -15015,30 +15015,30 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture."^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000164> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000118> "% w/v"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000164> <http://purl.obolibrary.org/obo/IAO_0000118> "% w/v"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "mass volume percentage"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture."^^xsd:string ;
                                             rdfs:label "mass volume percentage"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "weight-volume percentage"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "percent vol per vol"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "(w/v)"^^xsd:string ;
-                                            rdfs:comment "\"A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.\" [UOC:GVG]"^^xsd:string .
+                                            rdfs:comment "\"A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.\" [UOC:GVG]"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "(w/v)"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000165> rdfs:label "volume percentage"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "% v/v"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            <oboInOwl:hasExactSynonym> "% (v/v)"^^xsd:string ;
                                             rdfs:comment "\"A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution.\" [UOC:GVG]"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "% (v/v)"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution."^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "percent vol per vol"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "volume percentage"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000167> <oboInOwl:hasExactSynonym> "pph"^^xsd:string ;
-                                            rdfs:comment "\"A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 100 regardless of the units of measure as long as they are the same.\" [UOC:GVG]"^^xsd:string ;
                                             rdfs:label "parts per hundred"^^xsd:string ;
+                                            rdfs:comment "\"A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 100 regardless of the units of measure as long as they are the same.\" [UOC:GVG]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "10^[-2]"^^xsd:string .
 
 
@@ -15073,8 +15073,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000173> <oboInOwl:hasExactSynonym> "gram per millilitre"^^xsd:string ;
-                                            rdfs:comment "\"A mass unit density which is equal to mass of an object in grams divided by the volume in milliliter.\" [UOC:GVG]"^^xsd:string ;
                                             rdfs:label "gram per milliliter"^^xsd:string ;
+                                            rdfs:comment "\"A mass unit density which is equal to mass of an object in grams divided by the volume in milliliter.\" [UOC:GVG]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "g/ml"^^xsd:string .
 
 
@@ -15090,8 +15090,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "gram per liter"^^xsd:string ;
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in grams divided by the volume in liters.\" [UOC:GVG]"^^xsd:string ;
                                             rdfs:label "gram per liter"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <oboInOwl:hasExactSynonym> "g/L"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "g/L"^^xsd:string .
 
 
@@ -15099,8 +15099,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters.\" [UOC:GVG]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "milligram per milliliter"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "mg per ml"^^xsd:string ;
-                                            rdfs:label "milligram per milliliter"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters."^^xsd:string ;
+                                            rdfs:label "milligram per milliliter"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "milligram per millilitre"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "mg/ml"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> .
@@ -15127,9 +15127,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A catalytic unit activity which is equal to the amount of the enzyme that catalyzes the conversion of 1 micro mole of substrate per minute.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000184> <oboInOwl:hasExactSynonym> "kg/m"^^xsd:string ,
-                                                                       "kilogram per metre"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000184> <oboInOwl:hasExactSynonym> "kg/m"^^xsd:string ;
                                             rdfs:comment "\"An area density unit which is equal to the mass of an object in kilograms divided by one meter.\" [NIST:NIST]"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "kilogram per metre"^^xsd:string ;
                                             rdfs:label "kilogram per meter"^^xsd:string .
 
 
@@ -15149,8 +15149,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:label "purity percentage"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000194> rdfs:label "confluence percentage"^^xsd:string ;
-                                            rdfs:comment "\"A dimensionless percent unit which denotes the density of an attached or monolayer culture (e.g., cell culture).\" [MGED:MGED]"^^xsd:string .
+<http://purl.obolibrary.org/obo/UO_0000194> rdfs:comment "\"A dimensionless percent unit which denotes the density of an attached or monolayer culture (e.g., cell culture).\" [MGED:MGED]"^^xsd:string ;
+                                            rdfs:label "confluence percentage"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000195> <oboInOwl:hasExactSynonym> "F"^^xsd:string ;
@@ -15164,8 +15164,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000196> rdfs:label "pH"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+)."^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "pH"^^xsd:string ;
-                                            rdfs:comment "\"A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+).\" [Wikipedia:Wikipedia]"^^xsd:string .
+                                            rdfs:comment "\"A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+).\" [Wikipedia:Wikipedia]"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "pH"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000197> rdfs:comment "\"A specific volume unit which is equal to one liter volume occupied by one kilogram of a particular substance.\" [NIST:NIST]"^^xsd:string ;
@@ -15221,13 +15221,13 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "milliliter per liter"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000208> rdfs:comment "\"A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters.\" [UOC:GVG]"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "gram per deciliter"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000208> <http://purl.obolibrary.org/obo/IAO_0000111> "gram per deciliter"^^xsd:string ;
+                                            rdfs:comment "\"A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters.\" [UOC:GVG]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "g/dl"^^xsd:string ,
                                                                        "gram per decilitre"^^xsd:string ;
+                                            rdfs:label "gram per deciliter"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters."^^xsd:string ;
-                                            rdfs:label "gram per deciliter"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "g/dl"^^xsd:string .
 
 
@@ -15247,8 +15247,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A dimensionless count unit which a measure of plague forming units in a given volume.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000212> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            rdfs:label "colony forming unit per volume"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000212> rdfs:label "colony forming unit per volume"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "colony forming unit per volume"^^xsd:string ;
                                             rdfs:comment "\"A concentration unit which a measure of viable bacterial numbers in a given volume.\" [Wikipedia:Wikipedia]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A concentration unit which a measure of viable bacterial numbers in a given volume."^^xsd:string .
@@ -15284,13 +15284,13 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000221> <oboInOwl:hasExactSynonym> "Da"^^xsd:string ;
                                             rdfs:label "dalton"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "u"^^xsd:string ,
-                                                                       "amu"^^xsd:string ,
-                                                                       "unified atomic mass unit"^^xsd:string ;
+                                                                       "unified atomic mass unit"^^xsd:string ,
+                                                                       "amu"^^xsd:string ;
                                             rdfs:comment "\"An independently to the base SI units defined mass unit which is equal to one twelfth of the mass of an unbound atom of the carbon-12 nuclide, at rest and in its ground state.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000222> rdfs:label "kilodalton"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "kDa"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000222> <oboInOwl:hasExactSynonym> "kDa"^^xsd:string ;
+                                            rdfs:label "kilodalton"^^xsd:string ;
                                             rdfs:comment "\"A mass unit which is equal to one thousand daltons.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
@@ -15335,8 +15335,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:label "byte"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000234> rdfs:label "kilobyte"^^xsd:string ;
-                                            rdfs:comment "\"An information unit which is equal to 1000 bytes.\" [Wikipedia:Wikipedia]"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000234> rdfs:comment "\"An information unit which is equal to 1000 bytes.\" [Wikipedia:Wikipedia]"^^xsd:string ;
+                                            rdfs:label "kilobyte"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "kB"^^xsd:string .
 
 
@@ -15375,8 +15375,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000244> rdfs:comment "\"A count unit which contains one nucleotide.\" [UO:GVG]"^^xsd:string ;
-                                            rdfs:label "base pair"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "bp"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "bp"^^xsd:string ;
+                                            rdfs:label "base pair"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000245> rdfs:label "kibibyte"^^xsd:string ;
@@ -15415,8 +15415,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000252> rdfs:comment "\"An electric potential difference unit which is equal to one million volts or 10^[6] V.\" [UOC:GVG]"^^xsd:string ;
-                                            rdfs:label "megavolt"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "MV"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "MV"^^xsd:string ;
+                                            rdfs:label "megavolt"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000254> rdfs:comment "\"A surface tension unit which is equal to one newton per meter.\" [NIST:NIST]"^^xsd:string ;
@@ -15483,8 +15483,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000271> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A volumetric flow rate unit which is equal to one microliter volume through a given surface in one minute."^^xsd:string ;
                                             rdfs:label "microliters per minute"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "microlitres per minute"^^xsd:string ,
-                                                                       "uL/min"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "uL/min"^^xsd:string ,
+                                                                       "microlitres per minute"^^xsd:string ;
                                             rdfs:comment "\"A volumetric flow rate unit which is equal to one microliter volume through a given surface in one minute.\" [UOC:GVG]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "microliters per minute"^^xsd:string .
 
@@ -15507,8 +15507,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <oboInOwl:hasExactSynonym> "microgram per millilitre"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000275> <oboInOwl:hasExactSynonym> "ng/ml"^^xsd:string ,
-                                                                       "nanogram per millilitre"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000275> <oboInOwl:hasExactSynonym> "nanogram per millilitre"^^xsd:string ,
+                                                                       "ng/ml"^^xsd:string ;
                                             rdfs:label "nanogram per milliliter"^^xsd:string ;
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in nanograms divided by the volume in milliliters.\" [UOC:GVG]"^^xsd:string .
 
@@ -15540,8 +15540,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000284> <http://purl.obolibrary.org/obo/IAO_0000115> "A rate unit which is equal to one over one nanomolar."^^xsd:string ;
-                                            rdfs:comment "\"A rate unit which is equal to one over one nanomolar.\" [UO:GVG]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "1/nM"^^xsd:string ;
+                                            rdfs:comment "\"A rate unit which is equal to one over one nanomolar.\" [UO:GVG]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             rdfs:label "count per nanomolar"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "count per nanomolar"^^xsd:string ;
@@ -15562,8 +15562,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "ug/L"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "microgram per litre"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "microgram per liter"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "ng/ml"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "microgram per liter"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "ug/L"^^xsd:string ;
                                             rdfs:label "microgram per liter"^^xsd:string .
 
@@ -15653,9 +15653,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0010009> <oboInOwl:hasExactSynonym> "mmu"^^xsd:string ,
                                                                        "mDa"^^xsd:string ;
                                             rdfs:comment "\"A mass unit which is equal to 1/12 the mass of 12C\" [Wikipedia:Wikipedia]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "milli unified atomic mass unit"^^xsd:string ;
-                                            rdfs:label "milli"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "millidalton"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "milli unified atomic mass unit"^^xsd:string ,
+                                                                       "millidalton"^^xsd:string ;
+                                            rdfs:label "milli"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0010010> rdfs:label "hectare"^^xsd:string ;
@@ -15669,9 +15669,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0010012> rdfs:label "thou"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "mil"^^xsd:string ;
                                             rdfs:comment "\"A length unit which is equal to 0.0254 millimetres.\" [Wikipedia:Wikpiedia]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "mil"^^xsd:string ,
-                                                                       "th"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "th"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0010013> <oboInOwl:hasExactSynonym> "ft"^^xsd:string ;
@@ -15694,8 +15694,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:label "furlong"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0010017> rdfs:comment "\"A length unit which is equal to 1,609.344 metres, or 8 furlongs.\" [Wikipedia:Wikpiedia]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "mi"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0010017> <oboInOwl:hasExactSynonym> "mi"^^xsd:string ;
+                                            rdfs:comment "\"A length unit which is equal to 1,609.344 metres, or 8 furlongs.\" [Wikipedia:Wikpiedia]"^^xsd:string ;
                                             rdfs:label "mile"^^xsd:string .
 
 
@@ -15748,8 +15748,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"An imperial volume unit which is equivalent to 568.261,25 millilitres.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0010029> <oboInOwl:hasExactSynonym> "qt"^^xsd:string ;
-                                            rdfs:label "quart"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0010029> rdfs:label "quart"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "qt"^^xsd:string ;
                                             rdfs:comment "\"An imperial volume unit which is equivalent to 1,136.5225 millilitres, or two pints.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
@@ -15805,8 +15805,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 <http://purl.obolibrary.org/obo/UO_0010040> rdfs:comment "\"A metric teaspoon is a unit of measurement of volume widely used in cooking recipes and pharmaceutic prescriptions. It equals a 5mL volume.\" [Wikipedia:https://en.wikipedia.org/wiki/Teaspoon]"^^xsd:string ;
                                             rdfs:label "teaspoon"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "tsp"^^xsd:string ,
-                                                                       "metric teaspoon"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "metric teaspoon"^^xsd:string ,
+                                                                       "tsp"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0010048> rdfs:label "micromole"^^xsd:string ;
@@ -15827,11 +15827,11 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0010051> <oboInOwl:hasExactSynonym> "kilocalorie"^^xsd:string ,
-                                                                       "food calorie"^^xsd:string ,
-                                                                       "cal"^^xsd:string ;
+                                                                       "food calorie"^^xsd:string ;
                                             rdfs:label "large calorie"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "big calorie"^^xsd:string ,
-                                                                       "calorie"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "cal"^^xsd:string ,
+                                                                       "calorie"^^xsd:string ,
+                                                                       "big calorie"^^xsd:string ;
                                             rdfs:comment "\"A unit of energy widely used in nutrition, equivalent to the amount of heat needed to cause one kilogram of water to rise in temperature by one degree Celsius.\" [Wikipedia:Wikipedia]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "kcal"^^xsd:string .
 
