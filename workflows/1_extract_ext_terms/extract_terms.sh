@@ -17,11 +17,13 @@ do
         # convert owl to ttl and remove owl
         robot convert --input extracted_$prefix.owl \
         --output extracted_$prefix.ttl
-        rm extracted_$prefix.owl
     fi
-    # TODO: Merge extracted_*.ttl
-
 done < "ontologies.txt"
+
+# Merge extracted_*.owl on to merged.owl
+robot merge --inputs "extracted_*.owl" --output merged.owl
+robot convert --input merged.owl --output merged.ttl 
+rm extracted_*.owl  # remove owl files
 
 
 
