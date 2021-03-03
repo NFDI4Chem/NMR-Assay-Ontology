@@ -5910,8 +5910,8 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0000024> <oboInOwl:hasExactSynonym> "ng"^^xsd:string ;
-                                            rdfs:label "nanogram"^^xsd:string ;
-                                            rdfs:comment "\"A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g.\" [UOC:GVG]"^^xsd:string .
+                                            rdfs:comment "\"A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g.\" [UOC:GVG]"^^xsd:string ;
+                                            rdfs:label "nanogram"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000025> <oboInOwl:hasExactSynonym> "pg"^^xsd:string ;
@@ -5995,8 +5995,8 @@
                                             rdfs:label "nanomole"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000042> rdfs:comment "\"A substance unit equal to 10^[-12] mol.\" [NIST:NIST]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "pmol"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000042> <oboInOwl:hasExactSynonym> "pmol"^^xsd:string ;
+                                            rdfs:comment "\"A substance unit equal to 10^[-12] mol.\" [NIST:NIST]"^^xsd:string ;
                                             rdfs:label "picomole"^^xsd:string .
 
 
@@ -6036,8 +6036,8 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0000068> rdfs:label "molal"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "m"^^xsd:string ;
-                                            rdfs:comment "\"A unit of concentration which expresses a concentration of a solution of 1 mole per kilogram of solvent (mol/kg).\" [UOC:GVG]"^^xsd:string .
+                                            rdfs:comment "\"A unit of concentration which expresses a concentration of a solution of 1 mole per kilogram of solvent (mol/kg).\" [UOC:GVG]"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "m"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000069> <oboInOwl:hasExactSynonym> "mm"^^xsd:string ;
@@ -6082,8 +6082,8 @@
                                             <oboInOwl:hasExactSynonym> "m/s^[2]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000078> rdfs:comment "\"An angular unit acceleration which is equal to the angular acceleration of an object changing its angular velocity by 1rad/s over a time period that equals one second.\" [NIST:NIST]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "alpha"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000078> <oboInOwl:hasExactSynonym> "alpha"^^xsd:string ;
+                                            rdfs:comment "\"An angular unit acceleration which is equal to the angular acceleration of an object changing its angular velocity by 1rad/s over a time period that equals one second.\" [NIST:NIST]"^^xsd:string ;
                                             rdfs:label "radian per second per second"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "rad/s^[2]"^^xsd:string .
 
@@ -6105,16 +6105,16 @@
                                             rdfs:label "square centimeter"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000082> rdfs:label "square millimeter"^^xsd:string ;
-                                            rdfs:comment "\"An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2].\" [NIST:NIST]"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000082> rdfs:comment "\"An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2].\" [NIST:NIST]"^^xsd:string ;
+                                            rdfs:label "square millimeter"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "square millimetre"^^xsd:string ,
                                                                        "mm^[2]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000083> <oboInOwl:hasExactSynonym> "kg/m^[3]"^^xsd:string ;
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in kilograms divided by the volume in cubic meters.\" [UOC:GVG]"^^xsd:string ;
-                                            rdfs:label "kilogram per cubic meter"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "kilogram per cubic metre"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "kilogram per cubic metre"^^xsd:string ;
+                                            rdfs:label "kilogram per cubic meter"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000084> rdfs:label "gram per cubic centimeter"^^xsd:string ;
@@ -6183,9 +6183,9 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0000096> rdfs:label "cubic meter"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "m^[3]"^^xsd:string ;
-                                            rdfs:comment "\"A volume unit which is equal to the volume of a cube with edges one meter in length. One cubic meter equals to 1000 liters.\" [NIST:NIST]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "cubic metre"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "m^[3]"^^xsd:string ,
+                                                                       "cubic metre"^^xsd:string ;
+                                            rdfs:comment "\"A volume unit which is equal to the volume of a cube with edges one meter in length. One cubic meter equals to 1000 liters.\" [NIST:NIST]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000097> <oboInOwl:hasExactSynonym> "cubic centimetre"^^xsd:string ;
@@ -6195,8 +6195,8 @@
                                             rdfs:comment "\"A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml.\" [NIST:NIST]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000098> rdfs:comment "\"A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.\" [NIST:NIST]"^^xsd:string ;
-                                            rdfs:label "milliliter"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000098> rdfs:label "milliliter"^^xsd:string ;
+                                            rdfs:comment "\"A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.\" [NIST:NIST]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "ml"^^xsd:string ,
                                                                        "millilitre"^^xsd:string .
 
@@ -6275,8 +6275,8 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0000120> rdfs:label "katal"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "kat"^^xsd:string ;
-                                            rdfs:comment "\"A catalytic unit activity which is equal to the activity of a catalyst in moles per second, such as the amount of an enzyme needed to transform one mole of substrate per second.\" [NIST:NIST]"^^xsd:string .
+                                            rdfs:comment "\"A catalytic unit activity which is equal to the activity of a catalyst in moles per second, such as the amount of an enzyme needed to transform one mole of substrate per second.\" [NIST:NIST]"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "kat"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000123> rdfs:comment "\"A plane angle unit which is equal to the angle subtended at the center of a circle by an arc equal in length to the radius of the circle, approximately 57 degrees 17 minutes and 44.6 seconds.\" [NIST:NIST]"^^xsd:string ;
@@ -6299,8 +6299,8 @@
                                             <oboInOwl:hasExactSynonym> "Ci"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000134> rdfs:comment "\"An absorbed dose unit which is equal to the absorption of one joule of radiation energy by one kilogram of matter.\" [NIST:NIST]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "Gy"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000134> <oboInOwl:hasExactSynonym> "Gy"^^xsd:string ;
+                                            rdfs:comment "\"An absorbed dose unit which is equal to the absorption of one joule of radiation energy by one kilogram of matter.\" [NIST:NIST]"^^xsd:string ;
                                             rdfs:label "gray"^^xsd:string .
 
 
@@ -6378,8 +6378,8 @@
                                             <oboInOwl:hasExactSynonym> "ns"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000151> rdfs:comment "\"A time unit which is equal to 100 years.\" [Wikipedia:Wikipedia]"^^xsd:string ;
-                                            rdfs:label "century"^^xsd:string .
+<http://purl.obolibrary.org/obo/UO_0000151> rdfs:label "century"^^xsd:string ;
+                                            rdfs:comment "\"A time unit which is equal to 100 years.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000152> rdfs:label "half life"^^xsd:string ;
@@ -6440,8 +6440,8 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0000167> <oboInOwl:hasExactSynonym> "pph"^^xsd:string ;
-                                            rdfs:comment "\"A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 100 regardless of the units of measure as long as they are the same.\" [UOC:GVG]"^^xsd:string ;
                                             rdfs:label "parts per hundred"^^xsd:string ;
+                                            rdfs:comment "\"A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 100 regardless of the units of measure as long as they are the same.\" [UOC:GVG]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "10^[-2]"^^xsd:string .
 
 
@@ -6453,8 +6453,8 @@
 
 <http://purl.obolibrary.org/obo/UO_0000169> <oboInOwl:hasExactSynonym> "10^[-6]"^^xsd:string ;
                                             rdfs:comment "\"A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 1,000,000 regardless of the units of measure used as long as they are the same or 1 part in 10^[6].\" [UOC:GVG]"^^xsd:string ;
-                                            rdfs:label "parts per million"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "ppm"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "ppm"^^xsd:string ;
+                                            rdfs:label "parts per million"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000170> rdfs:label "parts per billion"^^xsd:string ;
@@ -6573,9 +6573,9 @@
                                             rdfs:comment "\"A specific volume unit which is equal to one millionth of a liter per kilogram or 10^[-6] l/kg.\" [NIST:NIST]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000201> <oboInOwl:hasExactSynonym> "cells per ml"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000201> <oboInOwl:hasExactSynonym> "cells per ml"^^xsd:string ,
+                                                                       "cells per millilitre"^^xsd:string ;
                                             rdfs:comment "\"A unit of cell concentration which is equal to one cell in a volume of 1 milliliter.\" [Bioedonline:Bioedonline]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "cells per millilitre"^^xsd:string ;
                                             rdfs:label "cells per milliliter"^^xsd:string .
 
 
@@ -6660,8 +6660,8 @@
                                             rdfs:comment "\"An independently to the base SI units defined mass unit which is equal to one twelfth of the mass of an unbound atom of the carbon-12 nuclide, at rest and in its ground state.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000222> <oboInOwl:hasExactSynonym> "kDa"^^xsd:string ;
-                                            rdfs:label "kilodalton"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000222> rdfs:label "kilodalton"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "kDa"^^xsd:string ;
                                             rdfs:comment "\"A mass unit which is equal to one thousand daltons.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
@@ -6735,8 +6735,8 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0000242> <oboInOwl:hasExactSynonym> "pixel density"^^xsd:string ;
-                                            rdfs:comment "\"A spatial resolution unit which is a standard measure of the resolution of a computer display, related to the size of the display in inches and the total number of pixels in the horizontal and vertical directions.\" [Wikipedia:Wikipedia]"^^xsd:string ;
                                             rdfs:label "pixels per inch"^^xsd:string ;
+                                            rdfs:comment "\"A spatial resolution unit which is a standard measure of the resolution of a computer display, related to the size of the display in inches and the total number of pixels in the horizontal and vertical directions.\" [Wikipedia:Wikipedia]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "ppi"^^xsd:string .
 
 
@@ -6746,8 +6746,8 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0000244> rdfs:comment "\"A count unit which contains one nucleotide.\" [UO:GVG]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "bp"^^xsd:string ;
-                                            rdfs:label "base pair"^^xsd:string .
+                                            rdfs:label "base pair"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "bp"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000245> rdfs:label "kibibyte"^^xsd:string ;
@@ -6786,8 +6786,8 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0000252> rdfs:comment "\"An electric potential difference unit which is equal to one million volts or 10^[6] V.\" [UOC:GVG]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "MV"^^xsd:string ;
-                                            rdfs:label "megavolt"^^xsd:string .
+                                            rdfs:label "megavolt"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "MV"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000254> rdfs:comment "\"A surface tension unit which is equal to one newton per meter.\" [NIST:NIST]"^^xsd:string ;
@@ -6858,9 +6858,9 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0000272> rdfs:comment "\"A unit of pressure equal to the amount of fluid pressure one millimeter deep in mercury at zero degrees centigrade on Earth.\" [url:en.wiktionary.org/wiki/mmHg]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "millimeters of mercury"^^xsd:string ,
-                                                                       "mmHg"^^xsd:string ;
-                                            rdfs:label "millimetres of mercury"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "millimeters of mercury"^^xsd:string ;
+                                            rdfs:label "millimetres of mercury"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "mmHg"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000273> rdfs:comment "\"A mass unit density which is equal to mass of an object in milligrams divided by the volume in liters.\" [UOC:GVG]"^^xsd:string ;
@@ -6875,8 +6875,8 @@
                                             <oboInOwl:hasExactSynonym> "microgram per millilitre"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000275> <oboInOwl:hasExactSynonym> "ng/ml"^^xsd:string ,
-                                                                       "nanogram per millilitre"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000275> <oboInOwl:hasExactSynonym> "nanogram per millilitre"^^xsd:string ,
+                                                                       "ng/ml"^^xsd:string ;
                                             rdfs:label "nanogram per milliliter"^^xsd:string ;
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in nanograms divided by the volume in milliliters.\" [UOC:GVG]"^^xsd:string .
 
@@ -6897,12 +6897,12 @@
                                             <oboInOwl:hasExactSynonym> "M^-1 s^-1"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000283> rdfs:label "kilogram per hectare"^^xsd:string ;
-                                            rdfs:comment "\"An area density unit which is equal to the mass of an object in kilograms divided by the surface area in hectares.\" [UO:GVG]"^^xsd:string .
+<http://purl.obolibrary.org/obo/UO_0000283> rdfs:comment "\"An area density unit which is equal to the mass of an object in kilograms divided by the surface area in hectares.\" [UO:GVG]"^^xsd:string ;
+                                            rdfs:label "kilogram per hectare"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000284> rdfs:comment "\"A rate unit which is equal to one over one nanomolar.\" [UO:GVG]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "1/nM"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000284> <oboInOwl:hasExactSynonym> "1/nM"^^xsd:string ;
+                                            rdfs:comment "\"A rate unit which is equal to one over one nanomolar.\" [UO:GVG]"^^xsd:string ;
                                             rdfs:label "count per nanomolar"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "nM^-1"^^xsd:string .
 
@@ -6948,8 +6948,8 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0000325> <oboInOwl:hasRelatedSynonym> "mH"^^xsd:string ;
-                                            rdfs:label "megaHertz"^^xsd:string ;
-                                            rdfs:comment "\"A frequency unit which is equal to one million hertz or 10^[6] V.\" [UOC:GVG]"^^xsd:string .
+                                            rdfs:comment "\"A frequency unit which is equal to one million hertz or 10^[6] V.\" [UOC:GVG]"^^xsd:string ;
+                                            rdfs:label "megaHertz"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000326> <oboInOwl:hasExactSynonym> "cM"^^xsd:string ;
@@ -7004,9 +7004,9 @@
 <http://purl.obolibrary.org/obo/UO_0010009> <oboInOwl:hasExactSynonym> "mmu"^^xsd:string ,
                                                                        "mDa"^^xsd:string ;
                                             rdfs:comment "\"A mass unit which is equal to 1/12 the mass of 12C\" [Wikipedia:Wikipedia]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "milli unified atomic mass unit"^^xsd:string ;
-                                            rdfs:label "milli"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "millidalton"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "milli unified atomic mass unit"^^xsd:string ,
+                                                                       "millidalton"^^xsd:string ;
+                                            rdfs:label "milli"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0010010> rdfs:label "hectare"^^xsd:string ;
@@ -7020,9 +7020,9 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0010012> rdfs:label "thou"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "mil"^^xsd:string ;
                                             rdfs:comment "\"A length unit which is equal to 0.0254 millimetres.\" [Wikipedia:Wikpiedia]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "th"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "mil"^^xsd:string ,
+                                                                       "th"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0010013> <oboInOwl:hasExactSynonym> "ft"^^xsd:string ;
@@ -7141,8 +7141,8 @@
 
 
 <http://purl.obolibrary.org/obo/UO_0010037> rdfs:label "hundredweight"^^xsd:string ;
-                                            rdfs:comment "\"An imperial mass unit which is equivalent to 50.802,345,44 kilograms, 112 pounds, or 8 stone.\" [Wikipedia:Wikipedia]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "cwt"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "cwt"^^xsd:string ;
+                                            rdfs:comment "\"An imperial mass unit which is equivalent to 50.802,345,44 kilograms, 112 pounds, or 8 stone.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0010038> rdfs:label "ton"^^xsd:string ;

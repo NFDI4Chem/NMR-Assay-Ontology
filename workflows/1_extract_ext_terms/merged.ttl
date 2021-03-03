@@ -52,6 +52,10 @@
 <http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000231
+<http://purl.obolibrary.org/obo/IAO_0000231> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000232
 <http://purl.obolibrary.org/obo/IAO_0000232> rdf:type owl:AnnotationProperty .
 
@@ -132,6 +136,14 @@
 <http://purl.obolibrary.org/obo/RO_0040042> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040
+<http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/date
 <http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
 
@@ -168,12 +180,24 @@
 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.geneontology.org/formats/oboInOwl#hasDefinition
+<http://www.geneontology.org/formats/oboInOwl#hasDefinition> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
 <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+<http://www.geneontology.org/formats/oboInOwl#id> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.geneontology.org/formats/oboInOwl#inSubset
@@ -208,7 +232,8 @@ rdfs:label rdf:type owl:AnnotationProperty .
 <http://purl.obolibrary.org/obo/BFO_0000050> rdf:type owl:ObjectProperty ;
                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002131> ;
                                              owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                             rdf:type owl:TransitiveProperty ;
+                                             rdf:type owl:TransitiveProperty ,
+                                                      owl:ReflexiveProperty ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "is part of"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "my brain is part of my body (continuant parthood, two material entities)"@en ,
                                                                                           "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)"@en ,
@@ -228,20 +253,38 @@ A continuant cannot be part of an occurrent: use 'participates in'. An occurrent
                                                                                          <http://purl.obolibrary.org/obo/BFO_0000019> ,
                                                                                          <http://purl.obolibrary.org/obo/BFO_0000020> ,
                                                                                          <http://purl.obolibrary.org/obo/BFO_0000031> ;
-                                             <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/valid_for_go_annotation_extension> ,
-                                                                                                     <http://purl.obolibrary.org/obo/valid_for_go_gp2term> ,
-                                                                                                     <http://purl.obolibrary.org/obo/valid_for_go_ontology> ,
-                                                                                                     <http://purl.obolibrary.org/obo/valid_for_gocam> ;
-                                             rdfs:label "part of"@en ;
-                                             rdfs:seeAlso <http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections> ,
-                                                          <http://ontologydesignpatterns.org/wiki/Submissions:PartOf> ,
-                                                          "http://www.obofoundry.org/ro/#OBO_REL:part_of" .
+                                             <http://www.geneontology.org/formats/oboInOwl#hasDefinition> [ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ;
+<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/valid_for_go_annotation_extension> ,
+                                                        <http://purl.obolibrary.org/obo/valid_for_go_gp2term> ,
+                                                        <http://purl.obolibrary.org/obo/valid_for_go_ontology> ,
+                                                        <http://purl.obolibrary.org/obo/valid_for_gocam> ;
+rdfs:label "part of"@en ,
+           "part_of"@en ;
+rdfs:seeAlso <http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections> ,
+             <http://ontologydesignpatterns.org/wiki/Submissions:PartOf> ,
+             "http://www.obofoundry.org/ro/#OBO_REL:part_of" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000051
 <http://purl.obolibrary.org/obo/BFO_0000051> rdf:type owl:ObjectProperty ;
                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002131> ;
-                                             rdf:type owl:TransitiveProperty ;
+                                             rdf:type owl:TransitiveProperty ,
+                                                      owl:ReflexiveProperty ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "has part"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "my body has part my brain (continuant parthood, two material entities)"@en ,
                                                                                           "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)"@en ,
@@ -262,19 +305,34 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 
 ###  http://purl.obolibrary.org/obo/BFO_0000054
 <http://purl.obolibrary.org/obo/BFO_0000054> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf owl:topObjectProperty ;
                                              owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000055> ;
                                              rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000017> ;
                                              rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000111> "realized in"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "obsolete_is_realized_by"@en ,
+                                                                                          "realized in"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "this disease is realized in this disease course"@en ,
                                                                                           "this fragility is realized in this shattering"@en ,
                                                                                           "this investigator role is realized in this investigation"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000118> "is realized by"@en ,
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Relation between a realizable and a process. Reciprocal relation of realizes [GOC:cjm]"^^xsd:string ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "replaced by http://purl.obolibrary.org/obo/BFO_0000054: 'is realized by'"^^xsd:string ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "GROUP:OBI:<http://obi.sourceforge.net>"^^xsd:string ,
+                                                                                          "PERSON: Chris Mungall"^^xsd:string ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000118> "executed_during"^^xsd:string ,
+                                                                                          "has_realization"^^xsd:string ,
+                                                                                          "is realized by"@en ,
+                                                                                          "is_realized_as"^^xsd:string ,
+                                                                                          "realized by"@en ,
+                                                                                          "realized_by"@en ,
                                                                                           "realized_in"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000231> <http://purl.obolibrary.org/obo/IAO_0000228> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> "http://purl.obolibrary.org/obo/obi.owl"^^xsd:string ;
                                              <http://purl.obolibrary.org/obo/IAO_0000600> "[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])"@en ;
                                              rdfs:comment "Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ;
                                              rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
-                                             rdfs:label "realized in"@en .
+                                             rdfs:label "is realized by"@en ,
+                                                        "realized in"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000055
@@ -359,6 +417,41 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
                                              rdfs:label "contains process"@en .
 
 
+###  http://purl.obolibrary.org/obo/BFO_0000177
+<http://purl.obolibrary.org/obo/BFO_0000177> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf owl:topObjectProperty ;
+                                             rdf:type owl:TransitiveProperty ,
+                                                      owl:ReflexiveProperty ;
+                                             <http://purl.obolibrary.org/obo/BFO_0000179> "c-part-of_at" ;
+                                             <http://purl.obolibrary.org/obo/BFO_0000180> "continuantPartOfAt" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Mary’s arm continuant_part_of Mary in the time of her life prior to her operation"@en ,
+                                                                                          "the Northern hemisphere of the planet Earth is a part of the planet Earth at all times at which the planet Earth exists."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "[copied from inverse property 'has continuant part at all times that part exists'] forall(t) exists_at(y,t) -> exists_at(x,t) and 'has continuant part'(x,y,t)" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance-level, relation. The BFO reading of the binary relation 'part of continuant at all times@en' is: forall(t) exists_at(x,t) -> exists_at(y,t) and 'part of continuant@en(x,y,t)'." ,
+                                                                                          "BFO 2 Reference: Immaterial entities are in some cases continuant parts of their material hosts. Thus the hold of a ship, for example, is a part of the ship; it may itself have parts, which may have names (used for example by ship stow planners, customs inspectors, and the like). Immaterial entities under both 1. and 2. can be of zero, one, two or three dimensions. We define:a(immaterial entity)[Definition: a is an immaterial entity = Def. a is an independent continuant that has no material entities as parts. (axiom label in BFO2 Reference: [028-001])"@en ,
+                                                                                          "BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion."@en ,
+                                                                                          "BFO2 Reference: continuant" ,
+                                                                                          "BFO2 Reference: continuantThe range for ‘t’ (as in all cases throughout this document unless otherwise specified) is: temporal region." ,
+                                                                                          "[copied from inverse property 'has continuant part at all times that part exists'] This is a binary version of a ternary time-indexed, instance level, relation. Unlike the rest of the temporalized relations which temporally quantify over existence of the subject of the relation, this relation temporally quantifies over the existence of the object of the relation. The relation is provided tentatively, to assess whether the GO needs such a relation. It is inverse of 'part of continuant at all times'" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> "http://purl.obolibrary.org/obo/bfo.owl"^^xsd:string ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000600> "b continuant_part_of c at t =Def. b is a part of c at t & t is a time & b and c are continuants. (axiom label in BFO2 Reference: [002-001])"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000601> "continuant_part_of is antisymmetric. (axiom label in BFO2 Reference: [120-001])"@en ,
+                                                                                          "continuant_part_of is reflexive (every continuant entity is a continuant_part_of itself). (axiom label in BFO2 Reference: [111-002])"@en ,
+                                                                                          "continuant_part_of is transitive. (axiom label in BFO2 Reference: [110-001])"@en ,
+                                                                                          "continuant_part_of satisfies unique product. (axiom label in BFO2 Reference: [122-001])"@en ,
+                                                                                          "continuant_part_of satisfies weak supplementation. (axiom label in BFO2 Reference: [121-001])"@en ,
+                                                                                          "if b continuant_part_of c at t and b is an independent continuant, then b is located_in c at t. (axiom label in BFO2 Reference: [047-002])"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000602> "(forall (x t) (if (Continuant x) (continuantPartOfAt x x t))) // axiom label in BFO2 CLIF: [111-002] " ,
+                                                                                          "(forall (x y t) (if (and (continuantPartOfAt x y t) (IndependentContinuant x)) (locatedInAt x y t))) // axiom label in BFO2 CLIF: [047-002] " ,
+                                                                                          "(forall (x y t) (if (and (continuantPartOfAt x y t) (continuantPartOfAt y x t)) (= x y))) // axiom label in BFO2 CLIF: [120-001] " ,
+                                                                                          "(forall (x y t) (if (and (continuantPartOfAt x y t) (not (= x y))) (exists (z) (and (continuantPartOfAt z y t) (not (exists (w) (and (continuantPartOfAt w x t) (continuantPartOfAt w z t)))))))) // axiom label in BFO2 CLIF: [121-001] " ,
+                                                                                          "(forall (x y t) (if (exists (v) (and (continuantPartOfAt v x t) (continuantPartOfAt v y t))) (exists (z) (forall (u w) (iff (iff (continuantPartOfAt w u t) (and (continuantPartOfAt w x t) (continuantPartOfAt w y t))) (= z u)))))) // axiom label in BFO2 CLIF: [122-001] " ,
+                                                                                          "(forall (x y z t) (if (and (continuantPartOfAt x y t) (continuantPartOfAt y z t)) (continuantPartOfAt x z t))) // axiom label in BFO2 CLIF: [110-001] " ,
+                                                                                          "(iff (ImmaterialEntity a) (and (IndependentContinuant a) (not (exists (b t) (and (MaterialEntity b) (continuantPartOfAt b a t)))))) // axiom label in BFO2 CLIF: [028-001] " ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             rdfs:label "part of continuant at all times"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000039
 <http://purl.obolibrary.org/obo/IAO_0000039> rdf:type owl:ObjectProperty ;
                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
@@ -369,10 +462,12 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 
 ###  http://purl.obolibrary.org/obo/IAO_0000136
 <http://purl.obolibrary.org/obo/IAO_0000136> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf owl:topObjectProperty ;
                                              rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000030> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "This document is about information artifacts and their representations"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A (currently) primitive relation that relates an information artifact to an entity."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A (currently) primitive relation that relates an information artifact to an entity."@en ,
+                                                                                          "is_about is a (currently) primitive relation that relates an information artifact to an entity."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> """7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \"mentions\" relation. Weaken the is_about relationship to be primitive. 
 
 We will try to build it back up by elaborating the various subproperties that are more precisely defined.
@@ -380,7 +475,9 @@ We will try to build it back up by elaborating the various subproperties that ar
 Some currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic."""@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "person:Alan Ruttenberg"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "Smith, Ceusters, Ruttenberg, 2000 years of philosophy"@en ;
-                                             rdfs:label "is about"@en .
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> "http://purl.obolibrary.org/obo/iao.owl"^^xsd:string ;
+                                             rdfs:label "is about" ,
+                                                        "is about"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000219
@@ -450,7 +547,8 @@ every c that is a concretization of g specifically denotes r"""@en ;
 <http://purl.obolibrary.org/obo/OBI_0000299> rdf:type owl:ObjectProperty ;
                                              owl:equivalentProperty [ owl:inverseOf <http://purl.obolibrary.org/obo/OBI_0000312>
                                                                     ] ;
-                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000057> ,
+                                                                owl:topObjectProperty ;
                                              owl:inverseOf <http://purl.obolibrary.org/obo/OBI_0000312> ;
                                              rdfs:domain <http://purl.obolibrary.org/obo/OBI_0000011> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "has_specified_output"@en ,
@@ -461,7 +559,8 @@ every c that is a concretization of g specifically denotes r"""@en ;
                                                                                           "PERSON: Bjoern Peters"^^xsd:string ,
                                                                                           "PERSON: Larry Hunter"^^xsd:string ,
                                                                                           "PERSON: Melanie Courtot"^^xsd:string ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ,
+                                                                                          "http://purl.obolibrary.org/obo/obi.owl"^^xsd:string ;
                                              rdfs:label "has_specified_output"@en .
 
 
@@ -496,8 +595,10 @@ every c that is a concretization of g specifically denotes r"""@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ,
                                                                                           "PERSON:Bjoern Peters"^^xsd:string ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
-                                             rdfs:label "is_specified_output_of"@en .
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ,
+                                                                                          "http://purl.obolibrary.org/obo/obi.owl"^^xsd:string ;
+                                             rdfs:label "is_specified_output_of"@en ,
+                                                        "is_specified_output_of"^^xsd:string .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000417
@@ -580,6 +681,7 @@ every c that is a concretization of g specifically denotes r"""@en ;
 
 ###  http://purl.obolibrary.org/obo/RO_0000056
 <http://purl.obolibrary.org/obo/RO_0000056> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf owl:topObjectProperty ;
                                             owl:inverseOf <http://purl.obolibrary.org/obo/RO_0000057> ;
                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000002> ;
                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
@@ -589,11 +691,13 @@ every c that is a concretization of g specifically denotes r"""@en ;
                                                                                          "this investigator participates in this investigation"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "participates_in"@en ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> "http://purl.obolibrary.org/obo/obi.owl"^^xsd:string ;
                                             rdfs:label "participates in"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000057
 <http://purl.obolibrary.org/obo/RO_0000057> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf owl:topObjectProperty ;
                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000002> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000051>
@@ -603,35 +707,62 @@ every c that is a concretization of g specifically denotes r"""@en ;
                                                                    ( <http://purl.obolibrary.org/obo/BFO_0000051>
                                                                      <http://purl.obolibrary.org/obo/RO_0000057>
                                                                    ) ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "has participant"@en ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "has participant"@en ,
+                                                                                         "has_participant"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000112> "this blood coagulation has participant this blood clot"@en ,
                                                                                          "this investigation has participant this investigator"@en ,
                                                                                          "this process has participant this input material (or this output material)"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000116> "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time."@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "has_participant"@en ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> "http://purl.obolibrary.org/obo/obi.owl"^^xsd:string ;
                                             <http://purl.org/dc/elements/1.1/source> "http://www.obofoundry.org/ro/#OBO_REL:has_participant" ;
-                                            rdfs:label "has participant"@en .
+                                            <http://www.geneontology.org/formats/oboInOwl#hasDefinition> [ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ,
+[ ] ;
+rdfs:label "has participant"@en ,
+           "has_participant" ,
+           "has_participant"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000058
 <http://purl.obolibrary.org/obo/RO_0000058> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf owl:topObjectProperty ;
                                             owl:inverseOf <http://purl.obolibrary.org/obo/RO_0000059> ;
                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000031> ;
                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000020> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "is concretized as"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000112> "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en ,
                                                                                          "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants."@en ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> "http://purl.obolibrary.org/obo/obi.owl"^^xsd:string ;
                                             rdfs:label "is concretized as"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000059
 <http://purl.obolibrary.org/obo/RO_0000059> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf owl:topObjectProperty ;
                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000020> ;
                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000031> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "concretizes"@en ,
+                                                                                         "is_concretization_of"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000112> "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en ,
                                                                                          "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."@en ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> "http://purl.obolibrary.org/obo/obi.owl"^^xsd:string ;
                                             rdfs:label "concretizes"@en .
 
 
@@ -1973,6 +2104,11 @@ For example, A and B may be gene products and binding of B by A positively regul
 <http://purl.obolibrary.org/obo/has_prefix> rdf:type owl:ObjectProperty .
 
 
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty <http://purl.obolibrary.org/obo/IAO_0000115> "a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a."@en ;
+                      rdfs:comment "A definition of \"tranfers\" object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -2026,6 +2162,14 @@ For example, A and B may be gene products and binding of B by A positively regul
                                                     owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000011>
                                                                                                [ rdf:type owl:Restriction ;
                                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000010>
+                                                                                               ]
+                                                                                             ) ;
+                                                                          rdf:type owl:Class
+                                                                        ] ,
+                                                                        [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000011>
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
                                                                                                  owl:someValuesFrom [ rdf:type owl:Class ;
                                                                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/IAO_0000010>
                                                                                                                                     <http://purl.obolibrary.org/obo/IAO_0000096>
@@ -2036,12 +2180,91 @@ For example, A and B may be gene products and binding of B by A positively regul
                                                                           rdf:type owl:Class
                                                                         ] ;
                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ;
-                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "A planned process that has specified output a software product and that involves the creation of source code."@en ;
+                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "A planned process resulting in a software product involving the creation of source code."@en ,
+                                                                                                 "A planned process that has specified output a software product and that involves the creation of source code."@en ;
                                                     <http://purl.obolibrary.org/obo/IAO_0000117> "Mathias Brochhausen"@en ,
                                                                                                  "William R. Hogan"@en ;
                                                     <http://purl.obolibrary.org/obo/IAO_0000119> "http://en.wikipedia.org/wiki/Software_development" ;
                                                     <http://purl.obolibrary.org/obo/IAO_0000600> "A planned process resulting in a software product involving the creation of source code."@en ;
                                                     rdfs:label "software development"@en .
+
+
+###  http://purl.obolibrary.org/obo/APOLLO_SV_00000105
+<http://purl.obolibrary.org/obo/APOLLO_SV_00000105> rdf:type owl:Class ;
+                                                    owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0020000>
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                                                                                                 owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                                                             owl:unionOf ( <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+                                                                                                                                                           <http://purl.obolibrary.org/obo/OBI_0000245>
+                                                                                                                                                         )
+                                                                                                                                           ]
+                                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                                                             owl:someValuesFrom <http://purl.obolibrary.org/obo/APOLLO_SV_00000008>
+                                                                                                                                           ]
+                                                                                                                                         ) ;
+                                                                                                                      rdf:type owl:Class
+                                                                                                                    ]
+                                                                                               ]
+                                                                                             ) ;
+                                                                          rdf:type owl:Class
+                                                                        ] ;
+                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0020000> ;
+                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier that refers to the legal person that creates and maintains software."@en ;
+                                                    <http://purl.obolibrary.org/obo/IAO_0000600> "An identifier that refers to the legal person that creates and maintains software."@en ;
+                                                    <http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040> "softwareDeveloper"^^xsd:string ;
+                                                    rdfs:label "software developer identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/APOLLO_SV_00000106
+<http://purl.obolibrary.org/obo/APOLLO_SV_00000106> rdf:type owl:Class ;
+                                                    owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0020000>
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                                                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                 owl:onClass <http://purl.obolibrary.org/obo/IAO_0000594>
+                                                                                               ]
+                                                                                             ) ;
+                                                                          rdf:type owl:Class
+                                                                        ] ;
+                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0020000> ;
+                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier that refers to a specific piece of software."@en ;
+                                                    <http://purl.obolibrary.org/obo/IAO_0000600> "An identifier that refers to a specific piece of software."@en ;
+                                                    <http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040> "SoftwareIdentification"^^xsd:string ;
+                                                    rdfs:label "complete software identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/APOLLO_SV_00000107
+<http://purl.obolibrary.org/obo/APOLLO_SV_00000107> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000024> ;
+                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "a fiat object part that is in gaseous phase and that is the outer layer of an object in space and is held to the object by gravitational force"@en ;
+                                                    <http://purl.obolibrary.org/obo/IAO_0000600> "a fiat object part that is in gaseous phase and that is the outer layer of an object in space and is held to the object by gravitational force"@en ;
+                                                    <http://purl.org/dc/elements/1.1/creator> "William R. Hogan"@en ;
+                                                    rdfs:comment "atmosphere of Earth, Earth's moon, Saturn, Titan, etc."@en ,
+                                                                 "outer, gaseous layers of exoplanets are called extraterrestrial atmosphere."@en ;
+                                                    rdfs:label "atmosphere"@en .
+
+
+###  http://purl.obolibrary.org/obo/APOLLO_SV_00000109
+<http://purl.obolibrary.org/obo/APOLLO_SV_00000109> rdf:type owl:Class ;
+                                                    owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0020000>
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                                                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000010>
+                                                                                               ]
+                                                                                             ) ;
+                                                                          rdf:type owl:Class
+                                                                        ] ;
+                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0020000> ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                      owl:someValuesFrom <http://purl.obolibrary.org/obo/APOLLO_SV_00000106>
+                                                                    ] ;
+                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier that refers to all version of a specific software."@en ;
+                                                    <http://purl.obolibrary.org/obo/IAO_0000600> "An identifier that refers to all version of a specific software."@en ;
+                                                    <http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040> "softwareName"^^xsd:string ;
+                                                    rdfs:label "software identifier"@en .
 
 
 ###  http://purl.obolibrary.org/obo/APOLLO_SV_00000796
@@ -2628,6 +2851,41 @@ For example, A and B may be gene products and binding of B by A positively regul
  ] .
 
 
+###  http://purl.obolibrary.org/obo/BFO_0000024
+<http://purl.obolibrary.org/obo/BFO_0000024> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                             <http://purl.obolibrary.org/obo/BFO_0000179> "fiat-object" ,
+                                                                                          "fiat-object-part" ;
+                                             <http://purl.obolibrary.org/obo/BFO_0000180> "FiatObjectPart" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "or with divisions drawn by cognitive subjects for practical reasons, such as the division of a cake (before slicing) into (what will become) slices (and thus member parts of an object aggregate). However, this does not mean that fiat object parts are dependent for their existence on divisions or delineations effected by cognitive subjects. If, for example, it is correct to conceive geological layers of the Earth as fiat object parts of the Earth, then even though these layers were first delineated in recent times, still existed long before such delineation and what holds of these layers (for example that the oldest layers are also the lowest layers) did not begin to hold because of our acts of delineation.Treatment of material entity in BFOExamples viewed by some as problematic cases for the trichotomy of fiat object part, object, and object aggregate include: a mussel on (and attached to) a rock, a slime mold, a pizza, a cloud, a galaxy, a railway train with engine and multiple carriages, a clonal stand of quaking aspen, a bacterial community (biofilm), a broken femur. Note that, as Aristotle already clearly recognized, such problematic cases – which lie at or near the penumbra of instances defined by the categories in question – need not invalidate these categories. The existence of grey objects does not prove that there are not objects which are black and objects which are white; the existence of mules does not prove that there are not objects which are donkeys and objects which are horses. It does, however, show that the examples in question need to be addressed carefully in order to show how they can be fitted into the proposed scheme, for example by recognizing additional subdivisions [29"@en ,
+                                                                                          "the FMA:regional parts of an intact human body."@en ,
+                                                                                          "the Western hemisphere of the Earth"@en ,
+                                                                                          "the division of the brain into regions"@en ,
+                                                                                          "the division of the planet into hemispheres"@en ,
+                                                                                          "the dorsal and ventral surfaces of the body"@en ,
+                                                                                          "the upper and lower lobes of the left lung"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "BFO 2 Reference: Most examples of fiat object parts are associated with theoretically drawn divisions"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000600> "b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of  c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary. (axiom label in BFO2 Reference: [027-004])"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000602> "(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] " ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
+                                             rdfs:label "fiat object"@en ,
+                                                        "fiat object part"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000024> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000600> ;
+   owl:annotatedTarget "b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of  c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary. (axiom label in BFO2 Reference: [027-004])"@en ;
+   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/027-004>
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000024> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000602> ;
+   owl:annotatedTarget "(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] " ;
+   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/027-004>
+ ] .
+
+
 ###  http://purl.obolibrary.org/obo/BFO_0000031
 <http://purl.obolibrary.org/obo/BFO_0000031> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000002> ,
@@ -2763,6 +3021,13 @@ For example, A and B may be gene products and binding of B by A positively regul
  ] .
 
 
+###  http://purl.obolibrary.org/obo/GEO_000000789
+<http://purl.obolibrary.org/obo/GEO_000000789> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000003> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000111> "planar angular measurement unit label"@en ;
+                                               rdfs:label "plane angle measurement unit label"@en .
+
+
 ###  http://purl.obolibrary.org/obo/GO_0003674
 <http://purl.obolibrary.org/obo/GO_0003674> rdf:type owl:Class ;
                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
@@ -2809,8 +3074,10 @@ For example, A and B may be gene products and binding of B by A positively regul
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000009> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "measurement unit label"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "Examples of measurement unit labels are liters, inches, weight per volume."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ,
+                                                                                          <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A data item label that denotes a unit of measure."@en ,
+                                                                                          "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> """2009-03-16: provenance: a term measurement unit was
 proposed for OBI (OBI_0000176) , edited by Chris Stoeckert and
 Cristian Cocos, and subsequently moved to IAO where the objective for
@@ -2819,6 +3086,8 @@ of this, different, term."""@en ,
                                                                                           "2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
                                                                                           "PERSON: Melanie Courtot"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> "http://purl.obolibrary.org/obo/obi.owl"^^xsd:string ;
+                                             <http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040> "unitId"^^xsd:string ;
                                              rdfs:label "measurement unit label"@en .
 
 
@@ -2826,10 +3095,16 @@ of this, different, term."""@en ,
 <http://purl.obolibrary.org/obo/IAO_0000005> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "objective specification"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000112> "In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000116> "2009-03-16: original definition when imported from OBI read: \"objective is an non realizable information entity which can serve as that  proper part of a plan towards which the realization of the plan is directed.\""@en ,
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction."@en ,
+                                                                                          "purpose of a study; support of hypothesis, discovery of new information"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ,
+                                                                                          <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en ,
+                                                                                          "a directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> """2009-03-16: original definition when imported from OBI read: \"objective is an
+non realizable information entity which can serve as that  proper part
+of a plan  towards which the realization of the plan is directed.\""""@en ,
+                                                                                          "2009-03-16: original definition when imported from OBI read: \"objective is an non realizable information entity which can serve as that  proper part of a plan towards which the realization of the plan is directed.\""@en ,
                                                                                           "2014-03-31: In the example of usage (\"In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction\") there is a protocol which is the ChIP assay protocol. In addition to being concretized on paper, the protocol can be concretized as a realizable entity, such as a plan that inheres in a person. The objective specification is the part that says that some protein and DNA interactions are identified. This is a specification of a process endpoint: the boundary in the process before which they are not identified and after which they are. During the realization of the plan, the goal is to get to the point of having the interactions, and participants in the realization of the plan try to do that."@en ,
                                                                                           "Answers the question, why did you do this experiment?"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
@@ -2846,8 +3121,10 @@ of this, different, term."""@en ,
 <http://purl.obolibrary.org/obo/IAO_0000007> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "Pour the contents of flask 1 into flask 2"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity that describes an action the bearer will take."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ,
+                                                                                          <http://purl.obolibrary.org/obo/IAO_0000123> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity that describes an action the bearer will take."@en ,
+                                                                                          "a directive information entity that describes an action the bearer will take"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "OBI Plan and Planned Process branch"@en ;
                                              rdfs:label "action specification"@en .
@@ -2856,14 +3133,23 @@ of this, different, term."""@en ,
 ###  http://purl.obolibrary.org/obo/IAO_0000009
 <http://purl.obolibrary.org/obo/IAO_0000009> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000111> "datum label"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000123> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "data item label"@en ,
+                                                                                          "datum label"@en ,
+                                                                                          "label"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ,
+                                                                                          <http://purl.obolibrary.org/obo/IAO_0000123> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label"@en ,
+                                                                                          "An information content entity that is part of some data item and is used to partially define the denotation of that data item."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "GROUP: IAO"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000118> "datum label" ;
                                              <http://purl.obolibrary.org/obo/IAO_0000232> """9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
 """ ;
-                                             rdfs:label "datum label"@en .
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> "http://purl.obolibrary.org/obo/obi.owl"^^xsd:string ;
+                                             <http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040> "label"^^xsd:string ;
+                                             rdfs:label "data item label"@en ,
+                                                        "datum label"@en ,
+                                                        "label"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000010
@@ -2907,13 +3193,17 @@ interpreted by or directly executed by a processing unit."""@en ;
 ###  http://purl.obolibrary.org/obo/IAO_0000027
 <http://purl.obolibrary.org/obo/IAO_0000027> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000111> "data item"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "data item"@en ,
+                                                                                          "data item"^^xsd:string ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "Data items include counts of things, analyte concentrations, and statistical summaries."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en ,
+                                                                                          "a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers."@en ,
                                                                                           "2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum."@en ,
+                                                                                          "2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum."^^xsd:string ,
                                                                                           "2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym."@en ,
+                                                                                          "2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym."^^xsd:string ,
                                                                                           "2014-03-31: See discussion at http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/" ,
                                                                                           """JAR: datum     -- well, this will be very tricky to define, but maybe some 
 information-like stuff that might be put into a computer and that is 
@@ -2923,8 +3213,11 @@ defer to Barry, or to Brian Cantwell Smith
 
 JAR: A data item is an approximately justified approximately true approximate belief"""@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
+                                                                                          "PERSON: Alan Ruttenberg"^^xsd:string ,
                                                                                           "PERSON: Chris Stoeckert"@en ,
-                                                                                          "PERSON: Jonathan Rees"@en ;
+                                                                                          "PERSON: Chris Stoeckert"^^xsd:string ,
+                                                                                          "PERSON: Jonathan Rees"@en ,
+                                                                                          "PERSON: Jonathan Rees"^^xsd:string ;
                                              <http://purl.obolibrary.org/obo/IAO_0000118> "data"@en ;
                                              rdfs:label "data item"@en .
 
@@ -2938,14 +3231,18 @@ JAR: A data item is an approximately justified approximately true approximate be
                                                              ] ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "information content entity"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "Examples of information content entites include journal articles, data, graphical layouts, and graphs."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A generically dependent continuant that is about some thing."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ,
+                                                                                          <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A generically dependent continuant that is about some thing."@en ,
+                                                                                          "an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "2014-03-10: The use of \"thing\" is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ)."@en ,
                                                                                           """information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).
 
 Previous. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity."""@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Chris Stoeckert"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI_0000142"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Chris Stoeckert"@en ,
+                                                                                          "PERSON: Chris Stoeckert"^^xsd:string ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI_0000142"@en ,
+                                                                                          "OBI_0000142"^^xsd:string ;
                                              rdfs:label "information content entity"@en .
 
 
@@ -2956,9 +3253,12 @@ Previous. An information content entity is a non-realizable information entity t
                                                                owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
                                                                owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000017>
                                                              ] ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ,
+                                                                                          <http://purl.obolibrary.org/obo/IAO_0000123> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000116> "2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  \"is the specification of a process that can be concretized and realized by an actor\" with alternative term  \"instruction\".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term."@en ,
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> """2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  \"is the specification of a process that can be
+concretized and realized by an actor\" with alternative term  \"instruction\".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term."""@en ,
+                                                                                          "2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  \"is the specification of a process that can be concretized and realized by an actor\" with alternative term  \"instruction\".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term."@en ,
                                                                                           "2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it."@en ,
                                                                                           "8/6/2009 Alan Ruttenberg: Changed label from \"information entity about a realizable\" after discussions at ICBO"@en ,
                                                                                           "Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan"@en ;
@@ -3039,7 +3339,8 @@ Previous. An information content entity is a non-realizable information entity t
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "source code module"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "The written source code that implements part of an algorithm. Test - if you know that it was written in a specific language, then it can be source code module. We mean here, roughly, the wording of a document such as a perl script."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000123> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000123> ,
+                                                                                          <http://purl.obolibrary.org/obo/IAO_0000124> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A source code module is a directive information entity that specifies, using a programming language, some algorithm."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "person:Alan Ruttenberg"@en ,
                                                                                           "person:Chris Stoeckert"@en ;
@@ -3117,8 +3418,10 @@ XML document; The instructions in a XSD file\""""@en ;
                                                              ] ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "plan specification"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ,
+                                                                                          <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en ,
+                                                                                          "a directive information entity that when concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified. Plan specifications includes parts such as objective specification, action specifications and conditional specifications."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was \" a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan\". It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term."@en ,
                                                                                           "2014-03-31: A plan specification can have other parts, such as conditional specifications."@en ,
                                                                                           "Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved"@en ;
@@ -3131,7 +3434,14 @@ Action specification not well enough specified.
 Conditional specification not well enough specified.
 Question whether all plan specifications have objective specifications.
 
-Request that IAO either clarify these or change definitions not to use them"""@en ;
+Request that IAO either clarify these or change definitions not to use them"""@en ,
+                                                          """2/3/2009 Comment from OBI review.
+ 
+ Action specification not well enough specified.
+ Conditional specification not well enough specified.
+ Question whether all plan specifications have objective specifications.
+ 
+ Request that IAO either clarify these or change definitions not to use them"""@en ;
                                              rdfs:label "plan specification"@en .
 
 
@@ -3308,6 +3618,74 @@ clustering algorithm."""@en ;
                                              rdfs:label "denotator type"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000594
+<http://purl.obolibrary.org/obo/IAO_0000594> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000010> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000123> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A software application is software that can be directly executed by some processing unit."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Melanie Courtot"@en ,
+                                                                                          "PERSON: Michel Dumontier"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "https://github.com/information-artifact-ontology/IAO/issues/80"@en ;
+                                             rdfs:label "software application"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0020000
+<http://purl.obolibrary.org/obo/IAO_0020000> rdf:type owl:Class ;
+                                             owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                                                                                          owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000001>
+                                                                                        ]
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                                                                                          owl:allValuesFrom <http://purl.obolibrary.org/obo/IAO_0020010>
+                                                                                        ]
+                                                                                      ) ;
+                                                                   rdf:type owl:Class
+                                                                 ] ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "identifier"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Mathias Brochhausen" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000118> "proper name"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/iao/pno.owl> ;
+                                             <http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040> "name"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/creator> "Mathias Brochhausen" ;
+                                             rdfs:comment "Sep 29, 2016: The current definition has been amended from the previous version: \"A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.\" to more accuratly reflect the necessary and sufficient condition on the class. (MB)"@en ;
+                                             rdfs:label "identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0020010
+<http://purl.obolibrary.org/obo/IAO_0020010> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0020000>
+                                                                 ] ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A dubbing process is a planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Mathias Brochhausen" ;
+                                             <http://purl.org/dc/elements/1.1/creator> "Mathias Brochhausen" ;
+                                             rdfs:label "dubbing process"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0020015
+<http://purl.obolibrary.org/obo/IAO_0020015> rdf:type owl:Class ;
+                                             owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0020000>
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                                                                                          owl:allValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+                                                                                        ]
+                                                                                      ) ;
+                                                                   rdf:type owl:Class
+                                                                 ] ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0020000> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A personal name is a proper name identifying an individual person."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Mathias Brochhausen" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "http://en.wikipedia.org/wiki/Personal_name" ;
+                                             rdfs:comment "Personal names \"today usually comprises a given name bestowed at birth or at a young age plus a surname. It is nearly universal for a human to have a name; except in rare cases, for example feral children growing up in isolation, or infants orphaned by natural disaster for whom no written record survives.[citation needed] The Convention on the Rights of the Child specifies that a child has the right from birth to a name. Certain isolated tribes, such as the Machiguenga of the Amazon, also lack personal names.\" (http://en.wikipedia.org/wiki/Personal_name)"@en ,
+                                                          "Sep 29, 2016: The comment that including the wikipedia definition of personal name is not to be interpreted in a way that restricts this class to only contain strings of letters. A numerical or alphanumerical identifier that denotes a human is being is a personal name, too. (MB)"@en ;
+                                             rdfs:label "personal name"@en .
+
+
 ###  http://purl.obolibrary.org/obo/NCBITaxon_10239
 <http://purl.obolibrary.org/obo/NCBITaxon_10239> rdf:type owl:Class ;
                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0100026> ;
@@ -3349,7 +3727,8 @@ clustering algorithm."""@en ;
                                                 <http://purl.obolibrary.org/obo/IAO_0000118> "eucaryotes"^^xsd:string ,
                                                                                              "eukaryotes"^^xsd:string ;
                                                 <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
-                                                rdfs:label "Eukaryota"^^xsd:string .
+                                                rdfs:label "Eukaryota"@en ,
+                                                           "Eukaryota"^^xsd:string .
 
 
 ###  http://purl.obolibrary.org/obo/NCBITaxon_314146
@@ -3415,13 +3794,17 @@ clustering algorithm."""@en ;
 
 ###  http://purl.obolibrary.org/obo/NCBITaxon_9606
 <http://purl.obolibrary.org/obo/NCBITaxon_9606> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_314146> ;
-                                                <http://purl.obolibrary.org/obo/IAO_0000111> "Homo sapiens"^^xsd:string ;
+                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_2759> ,
+                                                                <http://purl.obolibrary.org/obo/NCBITaxon_314146> ,
+                                                                <http://purl.obolibrary.org/obo/OBI_0100026> ;
+                                                <http://purl.obolibrary.org/obo/IAO_0000111> "Homo sapiens"@en ,
+                                                                                             "Homo sapiens"^^xsd:string ;
                                                 <http://purl.obolibrary.org/obo/IAO_0000118> "human"^^xsd:string ,
                                                                                              "human being"^^xsd:string ,
                                                                                              "man"^^xsd:string ;
                                                 <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
-                                                rdfs:label "Homo sapiens"^^xsd:string .
+                                                rdfs:label "Homo sapiens"@en ,
+                                                           "Homo sapiens"^^xsd:string .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000011
@@ -3432,14 +3815,31 @@ clustering algorithm."""@en ;
                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000059> ;
                                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000104>
                                                                                       ]
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                   owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/RO_0000059> ;
+                                                                                        owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000104>
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                                                                                    owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000005>
+                                                                                                                                  ]
+                                                                                                                                ) ;
+                                                                                                             rdf:type owl:Class
+                                                                                                           ]
+                                                                                      ]
                                                                  ] ;
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "planned process"@en ,
                                                                                           "planned process"^^xsd:string ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "Injecting mice with a vaccine in order to test its efficacy"^^xsd:string ;
                                              <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A process that realizes a plan which is the concretization of a plan specification."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A process that realizes a plan which is the concretization of a plan specification."@en ,
+                                                                                          "A processual entity that realizes a plan which is the concretization of a plan specification."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "'Plan' includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn't have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)"^^xsd:string ,
+                                                                                          """We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
+  objectives is a planned process."""^^xsd:string ,
                                                                                           """We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
 objectives is a planned process."""^^xsd:string ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Bjoern Peters"^^xsd:string ;
@@ -3665,11 +4065,13 @@ specimen can later be subject."""@en ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0000245
 <http://purl.obolibrary.org/obo/OBI_0000245> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000004> ,
+                                                             <http://purl.obolibrary.org/obo/BFO_0000040> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "organization"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ,
+                                                                                          "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> """BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:
 
 1) there are organization_member_roles (president, treasurer, branch
@@ -4701,7 +5103,8 @@ JZ: based on textual definition of edited document, it can be defined as N&S. I 
                                                                                           "fungus"@en ,
                                                                                           "plant"@en ,
                                                                                           "virus"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000121> ,
+                                                                                          <http://purl.obolibrary.org/obo/IAO_0000122> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')"^^xsd:string ,
                                                                                           """13-02-2009:
@@ -4709,6 +5112,7 @@ OBI doesn't take position as to  when an organism starts or ends being an organi
 This issue is outside the scope of OBI."""^^xsd:string ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "GROUP: OBI Biomaterial Branch"^^xsd:string ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "WEB: http://en.wikipedia.org/wiki/Organism"@en ;
+                                             <http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040> "Individual"^^xsd:string ;
                                              rdfs:label "organism"@en .
 
 
@@ -5170,7 +5574,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                                             <http://purl.obolibrary.org/obo/UO_0000000> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "time unit"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A unit which is a standard measure of the dimension in which events occur in sequence."^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ,
+                                                                                         <http://purl.org/obo/owl/UO> ;
+                                            <http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040> "unitOfTime" ;
                                             rdfs:comment "\"A unit which is a standard measure of the dimension in which events occur in sequence.\" [Wikipedia:Wikipedia]"^^xsd:string ;
                                             rdfs:label "time unit"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "time derived unit"^^xsd:string .
@@ -5756,7 +6162,14 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 ###  http://purl.obolibrary.org/obo/UO_0000047
 <http://purl.obolibrary.org/obo/UO_0000047> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/UO_0000000> ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000003> ,
+                                                            <http://purl.obolibrary.org/obo/UO_0000000> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A unit which is a standard measure of the amount of a 2-dimensional flat surface."^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> "http://purl.obolibrary.org/obo/uo.owl"^^xsd:string ;
+                                            <http://www.geneontology.org/formats/oboInOwl#created_by> "george gkoutos"^^xsd:string ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "unit.ontology"^^xsd:string ;
+                                            <http://www.geneontology.org/formats/oboInOwl#id> "UO:0000047"^^xsd:string ;
+                                            <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/uo#unit_group_slim> ;
                                             rdfs:comment "\"A unit which is a standard measure of the amount of a 2-dimensional flat surface.\" [UOC:GVG]"^^xsd:string ;
                                             rdfs:label "area unit"^^xsd:string .
 
@@ -9909,6 +10322,40 @@ class labels for these objects. The resulting predictor can be used to attach cl
 #    Individuals
 #################################################################
 
+###  http://purl.obolibrary.org/obo/APOLLO_SV_00000113
+<http://purl.obolibrary.org/obo/APOLLO_SV_00000113> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.obolibrary.org/obo/APOLLO_SV_00000107> ;
+                                                    rdfs:label "atmosphere of the Earth"@en .
+
+
+###  http://purl.obolibrary.org/obo/GEO_000000790
+<http://purl.obolibrary.org/obo/GEO_000000790> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/GEO_000000789> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000111> "angular degree"@en ;
+                                               rdfs:label "angular degree"@en ,
+                                                          "°"@en .
+
+
+###  http://purl.obolibrary.org/obo/GEO_000000791
+<http://purl.obolibrary.org/obo/GEO_000000791> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/GEO_000000789> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000111> "radian"@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A unit of measurement of planar angles where a full circle is 2π.  Specifically the angle is the length of the arc subtended by the angle divided by the circumference of the circle."@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Josh Hanna"@en ,
+                                                                                            "William R. Hogan"@en ;
+                                               rdfs:comment "Technically in the S.I. system it is a derived unit m•m^-1."@en ;
+                                               rdfs:label "rad"@en ,
+                                                          "radian"@en .
+
+
+###  http://purl.obolibrary.org/obo/GEO_000000796
+<http://purl.obolibrary.org/obo/GEO_000000796> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/UO_0000047> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000111> "square mile"@en ;
+                                               rdfs:comment "An area unit which is equal to the area enclosed by a square in a flat plane which is one mile on every side."@en ;
+                                               rdfs:label "square mile"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000002
 <http://purl.obolibrary.org/obo/IAO_0000002> rdf:type owl:NamedIndividual ,
                                                       <http://purl.obolibrary.org/obo/IAO_0000078> ;
@@ -12953,7 +13400,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 ###  http://purl.obolibrary.org/obo/UO_0000080
-<http://purl.obolibrary.org/obo/UO_0000080> rdf:type owl:NamedIndividual .
+<http://purl.obolibrary.org/obo/UO_0000080> rdf:type owl:NamedIndividual ,
+                                                     <http://purl.obolibrary.org/obo/UO_0000047> .
 
 
 ###  http://purl.obolibrary.org/obo/UO_0000081
@@ -13820,9 +14268,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "m"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second."^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "m"^^xsd:string ;
                                             rdfs:label "meter"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "m"^^xsd:string ,
-                                                                       "metre"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "metre"^^xsd:string ;
                                             rdfs:comment "\"A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second.\" [BIPM:BIPM, NIST:NIST]"^^xsd:string .
 
 
@@ -13835,8 +14283,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France."^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000010> <http://purl.obolibrary.org/obo/IAO_0000118> "s"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+<http://purl.obolibrary.org/obo/UO_0000010> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000118> "s"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "s"^^xsd:string ;
                                             rdfs:label "second"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "sec"^^xsd:string ;
@@ -13867,9 +14315,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 <http://purl.obolibrary.org/obo/UO_0000015> <http://purl.obolibrary.org/obo/IAO_0000118> "cm"^^xsd:string ;
                                             rdfs:label "centimeter"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "centimetre"^^xsd:string ,
-                                                                       "cm"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "centimetre"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "centimeter"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "cm"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             rdfs:comment "\"A length unit which is equal to one hundredth of a meter or 10^[-2] m.\" [NIST:NIST]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A length unit which is equal to one hundredth of a meter or 10^[-2] m."^^xsd:string .
@@ -13878,8 +14326,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000016> <http://purl.obolibrary.org/obo/IAO_0000115> "A length unit which is equal to one thousandth of a meter or 10^[-3] m."^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "mm"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "micrometre"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "millimeter"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "millimeter"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "mm"^^xsd:string ;
                                             rdfs:label "millimeter"^^xsd:string ;
                                             rdfs:comment "\"A length unit which is equal to one thousandth of a meter or 10^[-3] m.\" [NIST:NIST]"^^xsd:string .
@@ -13897,18 +14345,18 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000018> <http://purl.obolibrary.org/obo/IAO_0000118> "nm"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "nm"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "nanometer"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "nm"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m."^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "nanometre"^^xsd:string ;
                                             rdfs:label "nanometer"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            rdfs:comment "\"A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m.\" [NIST:NIST]"^^xsd:string .
+                                            rdfs:comment "\"A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m.\" [NIST:NIST]"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> .
 
 
 <http://purl.obolibrary.org/obo/UO_0000019> <oboInOwl:hasExactSynonym> "Å"^^xsd:string ;
-                                            rdfs:label "angstrom"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "angstrom"^^xsd:string ;
+                                            rdfs:label "angstrom"^^xsd:string ;
                                             rdfs:comment "\"A length unit which is equal to 10 [-10] m.\" [NIST:NIST]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A length unit which is equal to 10 [-10] m."^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> .
@@ -13951,8 +14399,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "nanogram"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <oboInOwl:hasExactSynonym> "ng"^^xsd:string ;
-                                            rdfs:comment "\"A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g.\" [UOC:GVG]"^^xsd:string ;
                                             rdfs:label "nanogram"^^xsd:string ;
+                                            rdfs:comment "\"A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g.\" [UOC:GVG]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "ng"^^xsd:string .
 
 
@@ -13974,8 +14422,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.\" [NIST:NIST]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "degree C"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K."^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <oboInOwl:hasExactSynonym> "C"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "C"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "degree Celsius"^^xsd:string .
 
@@ -14004,8 +14452,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A time unit which is equal to 60 seconds.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000032> <http://purl.obolibrary.org/obo/IAO_0000111> "hour"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+<http://purl.obolibrary.org/obo/UO_0000032> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "hour"^^xsd:string ;
                                             rdfs:label "hour"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "h"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "h"^^xsd:string ;
@@ -14014,8 +14462,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A time unit which is equal to 3600 seconds or 60 minutes.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000033> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "day"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000033> <http://purl.obolibrary.org/obo/IAO_0000111> "day"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             rdfs:comment "\"A time unit which is equal to 24 hours.\" [Wikipedia:Wikipedia]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A time unit which is equal to 24 hours."^^xsd:string ;
                                             rdfs:label "day"^^xsd:string .
@@ -14024,8 +14472,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000034> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             rdfs:label "week"^^xsd:string ;
                                             rdfs:comment "\"A time unit which is equal to 7 days.\" [Wikipedia:Wikipedia]"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "week"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A time unit which is equal to 7 days."^^xsd:string .
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A time unit which is equal to 7 days."^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "week"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000035> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
@@ -14036,8 +14484,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000036> <http://purl.obolibrary.org/obo/IAO_0000111> "year"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A time unit which is equal to 12 months which is science is taken to be equal to 365.25 days."^^xsd:string ;
                                             rdfs:comment "\"A time unit which is equal to 12 months which in science is taken to be equal to 365.25 days.\" [Wikipedia:Wikipedia]"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A time unit which is equal to 12 months which is science is taken to be equal to 365.25 days."^^xsd:string ;
                                             rdfs:label "year"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> .
 
@@ -14076,12 +14524,12 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000042> <http://purl.obolibrary.org/obo/IAO_0000118> "pmol"^^xsd:string ;
-                                            rdfs:comment "\"A substance unit equal to 10^[-12] mol.\" [NIST:NIST]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "pmol"^^xsd:string ;
+                                            rdfs:comment "\"A substance unit equal to 10^[-12] mol.\" [NIST:NIST]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A substance unit equal to 10^[-12] mol."^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            rdfs:label "picomole"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "picomole"^^xsd:string .
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "picomole"^^xsd:string ;
+                                            rdfs:label "picomole"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000043> rdfs:label "femtomole"^^xsd:string ;
@@ -14097,23 +14545,23 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000062> <http://purl.obolibrary.org/obo/IAO_0000118> "M"^^xsd:string ;
                                             rdfs:comment "\"A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L).\" [UOC:GVG]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L)."^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <oboInOwl:hasExactSynonym> "M"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "molar"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             rdfs:label "molar"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000063> <http://purl.obolibrary.org/obo/IAO_0000115> "A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M."^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000118> "mM"^^xsd:string ;
                                             rdfs:label "millimolar"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "mM"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000118> "mM"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "millimolar"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            <oboInOwl:hasExactSynonym> "mM"^^xsd:string ;
                                             rdfs:comment "\"A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M.\" [UOC:GVG]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000064> <http://purl.obolibrary.org/obo/IAO_0000118> "uM"^^xsd:string ;
-                                            rdfs:label "micromolar"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000064> rdfs:label "micromolar"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000118> "uM"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A unit of molarity which is equal to one millionth of a molar or 10^[-6] M."^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "uM"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
@@ -14134,14 +14582,14 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "picomolar"^^xsd:string ;
                                             rdfs:comment "\"A unit of molarity which is equal to 10^[-12] M.\" [UOC:GVG]"^^xsd:string ;
                                             rdfs:label "picomolar"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A unit of molarity which is equal to 10^[-12] M."^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "pM"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "pM"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> .
 
 
 <http://purl.obolibrary.org/obo/UO_0000068> rdfs:label "molal"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "m"^^xsd:string ;
-                                            rdfs:comment "\"A unit of concentration which expresses a concentration of a solution of 1 mole per kilogram of solvent (mol/kg).\" [UOC:GVG]"^^xsd:string .
+                                            rdfs:comment "\"A unit of concentration which expresses a concentration of a solution of 1 mole per kilogram of solvent (mol/kg).\" [UOC:GVG]"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "m"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000069> <oboInOwl:hasExactSynonym> "mm"^^xsd:string ;
@@ -14217,14 +14665,14 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 <http://purl.obolibrary.org/obo/UO_0000083> <oboInOwl:hasExactSynonym> "kg/m^[3]"^^xsd:string ;
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in kilograms divided by the volume in cubic meters.\" [UOC:GVG]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "kilogram per cubic metre"^^xsd:string ;
-                                            rdfs:label "kilogram per cubic meter"^^xsd:string .
+                                            rdfs:label "kilogram per cubic meter"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "kilogram per cubic metre"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000084> rdfs:label "gram per cubic centimeter"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "gram per cubic centimetre"^^xsd:string ;
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in grams divided by the volume in cubic centimeters.\" [UOC:GVG]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "g/cm^[3]"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "gram per cubic centimetre"^^xsd:string ,
+                                                                       "g/cm^[3]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000085> <oboInOwl:hasExactSynonym> "cd/m^[2]"^^xsd:string ,
@@ -14234,8 +14682,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000086> rdfs:comment "\"An area density unit which is equal to the mass of an object in kilograms divided by the surface area in meters squared.\" [NIST:NIST]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "Body Mass Index (BMI)"^^xsd:string ,
-                                                                       "kilogram per square metre"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "kilogram per square metre"^^xsd:string ,
+                                                                       "Body Mass Index (BMI)"^^xsd:string ;
                                             rdfs:label "kilogram per square meter"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "kg/m^[2]"^^xsd:string .
 
@@ -14262,9 +14710,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A molar volume unit which is equal to 1 cubic centimeter occupied by one mole of a substance in the form of a solid, liquid, or gas.\" [NIST:NIST]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000091> rdfs:comment "\"A momentum unit which is equal to the momentum of a one kilogram mass object with a speed of one meter per second.\" [NIST:NIST]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "kg.m/s"^^xsd:string ,
-                                                                       "kilogram metre per second"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000091> <oboInOwl:hasExactSynonym> "kg.m/s"^^xsd:string ;
+                                            rdfs:comment "\"A momentum unit which is equal to the momentum of a one kilogram mass object with a speed of one meter per second.\" [NIST:NIST]"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "kilogram metre per second"^^xsd:string ;
                                             rdfs:label "kilogram meter per second"^^xsd:string .
 
 
@@ -14307,19 +14755,19 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.\" [NIST:NIST]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "ml"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter."^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <oboInOwl:hasExactSynonym> "millilitre"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "ml"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "milliliter"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000099> <oboInOwl:hasExactSynonym> "litre"^^xsd:string ,
-                                                                       "L"^^xsd:string ,
-                                                                       "l"^^xsd:string ;
+                                                                       "l"^^xsd:string ,
+                                                                       "L"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter."^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            rdfs:comment "\"A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter.\" [NIST:NIST]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "liter"^^xsd:string ;
+                                            rdfs:comment "\"A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter.\" [NIST:NIST]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "L"^^xsd:string ;
                                             rdfs:label "liter"^^xsd:string .
 
@@ -14336,9 +14784,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000101> <http://purl.obolibrary.org/obo/IAO_0000111> "microliter"^^xsd:string ;
                                             rdfs:label "microliter"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "ul"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "microlitre"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A volume unit which is equal to one millionth of a liter or 10^[-6] L."^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "ul"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "microlitre"^^xsd:string ,
+                                                                       "ul"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             rdfs:comment "\"A volume unit which is equal to one millionth of a liter or 10^[-6] L.\" [NIST:NIST]"^^xsd:string .
 
@@ -14357,9 +14805,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "picoliter"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A volume unit which is equal to 10^[-12] L."^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "pl"^^xsd:string ,
-                                                                       "picolitre"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "pl"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "pl"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "picolitre"^^xsd:string ;
                                             rdfs:comment "\"A volume unit which is equal to 10^[-12] L.\" [NIST:NIST]"^^xsd:string .
 
 
@@ -14409,8 +14857,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000120> rdfs:label "katal"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "kat"^^xsd:string ;
-                                            rdfs:comment "\"A catalytic unit activity which is equal to the activity of a catalyst in moles per second, such as the amount of an enzyme needed to transform one mole of substrate per second.\" [NIST:NIST]"^^xsd:string .
+                                            rdfs:comment "\"A catalytic unit activity which is equal to the activity of a catalyst in moles per second, such as the amount of an enzyme needed to transform one mole of substrate per second.\" [NIST:NIST]"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "kat"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000123> rdfs:comment "\"A plane angle unit which is equal to the angle subtended at the center of a circle by an arc equal in length to the radius of the circle, approximately 57 degrees 17 minutes and 44.6 seconds.\" [NIST:NIST]"^^xsd:string ;
@@ -14433,8 +14881,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <oboInOwl:hasExactSynonym> "Ci"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000134> rdfs:comment "\"An absorbed dose unit which is equal to the absorption of one joule of radiation energy by one kilogram of matter.\" [NIST:NIST]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "Gy"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000134> <oboInOwl:hasExactSynonym> "Gy"^^xsd:string ;
+                                            rdfs:comment "\"An absorbed dose unit which is equal to the absorption of one joule of radiation energy by one kilogram of matter.\" [NIST:NIST]"^^xsd:string ;
                                             rdfs:label "gray"^^xsd:string .
 
 
@@ -14512,8 +14960,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <oboInOwl:hasExactSynonym> "ns"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000151> rdfs:comment "\"A time unit which is equal to 100 years.\" [Wikipedia:Wikipedia]"^^xsd:string ;
-                                            rdfs:label "century"^^xsd:string .
+<http://purl.obolibrary.org/obo/UO_0000151> rdfs:label "century"^^xsd:string ;
+                                            rdfs:comment "\"A time unit which is equal to 100 years.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000152> rdfs:label "half life"^^xsd:string ;
@@ -14578,8 +15026,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.\" [UOC:GVG]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000165> <http://purl.obolibrary.org/obo/IAO_0000118> "% v/v"^^xsd:string ;
-                                            rdfs:label "volume percentage"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000165> rdfs:label "volume percentage"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000118> "% v/v"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <oboInOwl:hasExactSynonym> "% (v/v)"^^xsd:string ;
                                             rdfs:comment "\"A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution.\" [UOC:GVG]"^^xsd:string ;
@@ -14602,8 +15050,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 <http://purl.obolibrary.org/obo/UO_0000169> <oboInOwl:hasExactSynonym> "10^[-6]"^^xsd:string ;
                                             rdfs:comment "\"A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 1,000,000 regardless of the units of measure used as long as they are the same or 1 part in 10^[6].\" [UOC:GVG]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "ppm"^^xsd:string ;
-                                            rdfs:label "parts per million"^^xsd:string .
+                                            rdfs:label "parts per million"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "ppm"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000170> rdfs:label "parts per billion"^^xsd:string ;
@@ -14625,8 +15073,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000173> <oboInOwl:hasExactSynonym> "gram per millilitre"^^xsd:string ;
-                                            rdfs:label "gram per milliliter"^^xsd:string ;
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in grams divided by the volume in milliliter.\" [UOC:GVG]"^^xsd:string ;
+                                            rdfs:label "gram per milliliter"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "g/ml"^^xsd:string .
 
 
@@ -14642,8 +15090,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "gram per liter"^^xsd:string ;
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in grams divided by the volume in liters.\" [UOC:GVG]"^^xsd:string ;
                                             rdfs:label "gram per liter"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "g/L"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            <oboInOwl:hasExactSynonym> "g/L"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "g/L"^^xsd:string .
 
 
@@ -14716,8 +15164,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000196> rdfs:label "pH"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+)."^^xsd:string ;
-                                            rdfs:comment "\"A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+).\" [Wikipedia:Wikipedia]"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "pH"^^xsd:string .
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "pH"^^xsd:string ;
+                                            rdfs:comment "\"A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+).\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000197> rdfs:comment "\"A specific volume unit which is equal to one liter volume occupied by one kilogram of a particular substance.\" [NIST:NIST]"^^xsd:string ;
@@ -14773,12 +15221,12 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "milliliter per liter"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000208> <http://purl.obolibrary.org/obo/IAO_0000111> "gram per deciliter"^^xsd:string ;
-                                            rdfs:comment "\"A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters.\" [UOC:GVG]"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000208> rdfs:comment "\"A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters.\" [UOC:GVG]"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "gram per deciliter"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "g/dl"^^xsd:string ,
                                                                        "gram per decilitre"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters."^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters."^^xsd:string ;
                                             rdfs:label "gram per deciliter"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000118> "g/dl"^^xsd:string .
 
@@ -14799,8 +15247,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             rdfs:comment "\"A dimensionless count unit which a measure of plague forming units in a given volume.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000212> rdfs:label "colony forming unit per volume"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+<http://purl.obolibrary.org/obo/UO_0000212> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
+                                            rdfs:label "colony forming unit per volume"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "colony forming unit per volume"^^xsd:string ;
                                             rdfs:comment "\"A concentration unit which a measure of viable bacterial numbers in a given volume.\" [Wikipedia:Wikipedia]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A concentration unit which a measure of viable bacterial numbers in a given volume."^^xsd:string .
@@ -14836,13 +15284,13 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000221> <oboInOwl:hasExactSynonym> "Da"^^xsd:string ;
                                             rdfs:label "dalton"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "u"^^xsd:string ,
-                                                                       "unified atomic mass unit"^^xsd:string ,
-                                                                       "amu"^^xsd:string ;
+                                                                       "amu"^^xsd:string ,
+                                                                       "unified atomic mass unit"^^xsd:string ;
                                             rdfs:comment "\"An independently to the base SI units defined mass unit which is equal to one twelfth of the mass of an unbound atom of the carbon-12 nuclide, at rest and in its ground state.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000222> <oboInOwl:hasExactSynonym> "kDa"^^xsd:string ;
-                                            rdfs:label "kilodalton"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000222> rdfs:label "kilodalton"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "kDa"^^xsd:string ;
                                             rdfs:comment "\"A mass unit which is equal to one thousand daltons.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
@@ -14927,8 +15375,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000244> rdfs:comment "\"A count unit which contains one nucleotide.\" [UO:GVG]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "bp"^^xsd:string ;
-                                            rdfs:label "base pair"^^xsd:string .
+                                            rdfs:label "base pair"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "bp"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000245> rdfs:label "kibibyte"^^xsd:string ;
@@ -14967,8 +15415,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000252> rdfs:comment "\"An electric potential difference unit which is equal to one million volts or 10^[6] V.\" [UOC:GVG]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "MV"^^xsd:string ;
-                                            rdfs:label "megavolt"^^xsd:string .
+                                            rdfs:label "megavolt"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "MV"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000254> rdfs:comment "\"A surface tension unit which is equal to one newton per meter.\" [NIST:NIST]"^^xsd:string ;
@@ -15035,16 +15483,16 @@ class labels for these objects. The resulting predictor can be used to attach cl
 <http://purl.obolibrary.org/obo/UO_0000271> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A volumetric flow rate unit which is equal to one microliter volume through a given surface in one minute."^^xsd:string ;
                                             rdfs:label "microliters per minute"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "uL/min"^^xsd:string ,
-                                                                       "microlitres per minute"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "microlitres per minute"^^xsd:string ,
+                                                                       "uL/min"^^xsd:string ;
                                             rdfs:comment "\"A volumetric flow rate unit which is equal to one microliter volume through a given surface in one minute.\" [UOC:GVG]"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "microliters per minute"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000272> rdfs:comment "\"A unit of pressure equal to the amount of fluid pressure one millimeter deep in mercury at zero degrees centigrade on Earth.\" [url:en.wiktionary.org/wiki/mmHg]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "millimeters of mercury"^^xsd:string ,
-                                                                       "mmHg"^^xsd:string ;
-                                            rdfs:label "millimetres of mercury"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "millimeters of mercury"^^xsd:string ;
+                                            rdfs:label "millimetres of mercury"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "mmHg"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000273> rdfs:comment "\"A mass unit density which is equal to mass of an object in milligrams divided by the volume in liters.\" [UOC:GVG]"^^xsd:string ;
@@ -15059,8 +15507,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <oboInOwl:hasExactSynonym> "microgram per millilitre"^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000275> <oboInOwl:hasExactSynonym> "nanogram per millilitre"^^xsd:string ,
-                                                                       "ng/ml"^^xsd:string ;
+<http://purl.obolibrary.org/obo/UO_0000275> <oboInOwl:hasExactSynonym> "ng/ml"^^xsd:string ,
+                                                                       "nanogram per millilitre"^^xsd:string ;
                                             rdfs:label "nanogram per milliliter"^^xsd:string ;
                                             rdfs:comment "\"A mass unit density which is equal to mass of an object in nanograms divided by the volume in milliliters.\" [UOC:GVG]"^^xsd:string .
 
@@ -15087,24 +15535,24 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A rate unit which is equal to one over one molar second."^^xsd:string .
 
 
-<http://purl.obolibrary.org/obo/UO_0000283> rdfs:label "kilogram per hectare"^^xsd:string ;
-                                            rdfs:comment "\"An area density unit which is equal to the mass of an object in kilograms divided by the surface area in hectares.\" [UO:GVG]"^^xsd:string .
+<http://purl.obolibrary.org/obo/UO_0000283> rdfs:comment "\"An area density unit which is equal to the mass of an object in kilograms divided by the surface area in hectares.\" [UO:GVG]"^^xsd:string ;
+                                            rdfs:label "kilogram per hectare"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000284> <http://purl.obolibrary.org/obo/IAO_0000115> "A rate unit which is equal to one over one nanomolar."^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "1/nM"^^xsd:string ;
                                             rdfs:comment "\"A rate unit which is equal to one over one nanomolar.\" [UO:GVG]"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "1/nM"^^xsd:string ;
                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000111> "count per nanomolar"^^xsd:string ;
                                             rdfs:label "count per nanomolar"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "count per nanomolar"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "nM^-1"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000285> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/uo.owl> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "count per molar"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "1/M"^^xsd:string ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A rate unit which is equal to one over one molar."^^xsd:string ;
                                             rdfs:label "count per molar"^^xsd:string ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A rate unit which is equal to one over one molar."^^xsd:string ;
                                             rdfs:comment "\"A rate unit which is equal to one over one molar.\" [UO:GVG]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "M^-1"^^xsd:string .
 
@@ -15149,8 +15597,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0000325> <oboInOwl:hasRelatedSynonym> "mH"^^xsd:string ;
-                                            rdfs:label "megaHertz"^^xsd:string ;
-                                            rdfs:comment "\"A frequency unit which is equal to one million hertz or 10^[6] V.\" [UOC:GVG]"^^xsd:string .
+                                            rdfs:comment "\"A frequency unit which is equal to one million hertz or 10^[6] V.\" [UOC:GVG]"^^xsd:string ;
+                                            rdfs:label "megaHertz"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0000326> <oboInOwl:hasExactSynonym> "cM"^^xsd:string ;
@@ -15342,8 +15790,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 
 <http://purl.obolibrary.org/obo/UO_0010037> rdfs:label "hundredweight"^^xsd:string ;
-                                            rdfs:comment "\"An imperial mass unit which is equivalent to 50.802,345,44 kilograms, 112 pounds, or 8 stone.\" [Wikipedia:Wikipedia]"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "cwt"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "cwt"^^xsd:string ;
+                                            rdfs:comment "\"An imperial mass unit which is equivalent to 50.802,345,44 kilograms, 112 pounds, or 8 stone.\" [Wikipedia:Wikipedia]"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0010038> rdfs:label "ton"^^xsd:string ;
@@ -15357,8 +15805,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
 <http://purl.obolibrary.org/obo/UO_0010040> rdfs:comment "\"A metric teaspoon is a unit of measurement of volume widely used in cooking recipes and pharmaceutic prescriptions. It equals a 5mL volume.\" [Wikipedia:https://en.wikipedia.org/wiki/Teaspoon]"^^xsd:string ;
                                             rdfs:label "teaspoon"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "metric teaspoon"^^xsd:string ,
-                                                                       "tsp"^^xsd:string .
+                                            <oboInOwl:hasExactSynonym> "tsp"^^xsd:string ,
+                                                                       "metric teaspoon"^^xsd:string .
 
 
 <http://purl.obolibrary.org/obo/UO_0010048> rdfs:label "micromole"^^xsd:string ;
@@ -15382,8 +15830,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
                                                                        "food calorie"^^xsd:string ,
                                                                        "cal"^^xsd:string ;
                                             rdfs:label "large calorie"^^xsd:string ;
-                                            <oboInOwl:hasExactSynonym> "calorie"^^xsd:string ,
-                                                                       "big calorie"^^xsd:string ;
+                                            <oboInOwl:hasExactSynonym> "big calorie"^^xsd:string ,
+                                                                       "calorie"^^xsd:string ;
                                             rdfs:comment "\"A unit of energy widely used in nutrition, equivalent to the amount of heat needed to cause one kilogram of water to rise in temperature by one degree Celsius.\" [Wikipedia:Wikipedia]"^^xsd:string ;
                                             <oboInOwl:hasExactSynonym> "kcal"^^xsd:string .
 
