@@ -16,5 +16,9 @@ In order to start developing an NMR-Assay-Ontology based on the [draft T-box](ht
 `cd workflows/1_extract_ext_terms/`
 `./extract_terms.sh`
 
+**Query all merged terms**:
+`cd workflows/1_extract_ext_terms/`
+`arq --query=query_merged_terms.rq --data=merged.ttl --results=CSV > merged_terms.csv`
+
 **TODO:** 
 * include CHEBI terms in  extract_chebi.txt
