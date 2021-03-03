@@ -1,6 +1,6 @@
 # NMR-Assay-Ontology
 
-## Workflow
+## Workflows
 In order to start developing an NMR-Assay-Ontology based on the [draft T-box](https://app.diagrams.net/#G1QopwpmihR1fCKU0Szhjv2T94zCD0lOGR) we are establish a few automated workflows, main based on ROBOT, Protege (with MIREOT extension).
 
 ### workflow 1: extract external ontology terms 
