@@ -1,2 +1,6 @@
 http://purl.obolibrary.org/obo/BFO_0000050
 http://purl.obolibrary.org/obo/BFO_0000055
+http://purl.obolibrary.org/obo/RO_0000059
+http://purl.obolibrary.org/obo/RO_0000086
+http://purl.obolibrary.org/obo/RO_0000087
+http://purl.obolibrary.org/obo/RO_0002262
