@@ -88,6 +88,10 @@
 <http://purl.obolibrary.org/obo/RO_0004050> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.obolibrary.org/obo/RO_0040042
+<http://purl.obolibrary.org/obo/RO_0040042> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/source
 <http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
 
@@ -165,6 +169,11 @@ rdfs:label rdf:type owl:AnnotationProperty .
 A continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."""@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000118> "part_of"@en ;
                                              <http://purl.obolibrary.org/obo/RO_0001900> <http://purl.obolibrary.org/obo/RO_0001901> ;
+                                             <http://purl.obolibrary.org/obo/RO_0040042> <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                         <http://purl.obolibrary.org/obo/BFO_0000003> ,
+                                                                                         <http://purl.obolibrary.org/obo/BFO_0000019> ,
+                                                                                         <http://purl.obolibrary.org/obo/BFO_0000020> ,
+                                                                                         <http://purl.obolibrary.org/obo/BFO_0000031> ;
                                              <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/valid_for_go_annotation_extension> ,
                                                                                                      <http://purl.obolibrary.org/obo/valid_for_go_gp2term> ,
                                                                                                      <http://purl.obolibrary.org/obo/valid_for_go_ontology> ,
@@ -200,6 +209,7 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 ###  http://purl.obolibrary.org/obo/BFO_0000054
 <http://purl.obolibrary.org/obo/BFO_0000054> rdf:type owl:ObjectProperty ;
                                              owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "realized in"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "this disease is realized in this disease course"@en ,
                                                                                           "this fragility is realized in this shattering"@en ,
@@ -214,6 +224,7 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 
 ###  http://purl.obolibrary.org/obo/BFO_0000055
 <http://purl.obolibrary.org/obo/BFO_0000055> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "realizes"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "this disease course realizes this disease"@en ,
                                                                                           "this investigation realizes this investigator role"@en ,
@@ -229,6 +240,8 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002086> ;
                                              owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000063> ;
                                              rdf:type owl:TransitiveProperty ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
                                              owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000050>
                                                                       <http://purl.obolibrary.org/obo/BFO_0000062>
                                                                     ) ;
@@ -246,6 +259,8 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 <http://purl.obolibrary.org/obo/BFO_0000063> rdf:type owl:ObjectProperty ;
                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002222> ;
                                              rdf:type owl:TransitiveProperty ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
                                              owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000050>
                                                                       <http://purl.obolibrary.org/obo/BFO_0000063>
                                                                     ) ;
@@ -258,6 +273,7 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 ###  http://purl.obolibrary.org/obo/BFO_0000066
 <http://purl.obolibrary.org/obo/BFO_0000066> rdf:type owl:ObjectProperty ;
                                              owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000067> ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
                                              owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000050>
                                                                       <http://purl.obolibrary.org/obo/BFO_0000066>
                                                                     ) ,
@@ -302,6 +318,7 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 
 ###  http://purl.obolibrary.org/obo/RO_0000053
 <http://purl.obolibrary.org/obo/RO_0000053> rdf:type owl:ObjectProperty ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000020> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "bearer of"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000112> "this apple is bearer of this red color"@en ,
                                                                                          "this vase is bearer of this fragility"@en ;
@@ -316,6 +333,8 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 ###  http://purl.obolibrary.org/obo/RO_0000056
 <http://purl.obolibrary.org/obo/RO_0000056> rdf:type owl:ObjectProperty ;
                                             owl:inverseOf <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000002> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000111> "participates in"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000112> "this blood clot participates in this blood coagulation"@en ,
                                                                                          "this input material (or this output material) participates in this process"@en ,
@@ -327,6 +346,8 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 
 ###  http://purl.obolibrary.org/obo/RO_0000057
 <http://purl.obolibrary.org/obo/RO_0000057> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000002> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000051>
                                                                      <http://purl.obolibrary.org/obo/BFO_0000055>
                                                                      <http://purl.obolibrary.org/obo/RO_0000052>
@@ -348,6 +369,8 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 ###  http://purl.obolibrary.org/obo/RO_0000058
 <http://purl.obolibrary.org/obo/RO_0000058> rdf:type owl:ObjectProperty ;
                                             owl:inverseOf <http://purl.obolibrary.org/obo/RO_0000059> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000031> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000020> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000112> "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en ,
                                                                                          "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants."@en ;
@@ -356,6 +379,8 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 
 ###  http://purl.obolibrary.org/obo/RO_0000059
 <http://purl.obolibrary.org/obo/RO_0000059> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000020> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000031> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000112> "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en ,
                                                                                          "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."@en ;
@@ -389,6 +414,7 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 ###  http://purl.obolibrary.org/obo/RO_0000086
 <http://purl.obolibrary.org/obo/RO_0000086> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000053> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000019> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000112> "this apple has quality this red color"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000116> "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist."@en ;
@@ -399,6 +425,7 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 ###  http://purl.obolibrary.org/obo/RO_0000087
 <http://purl.obolibrary.org/obo/RO_0000087> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000053> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000023> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000112> "this person has role this investigator role (more colloquially: this person has this role of investigator)"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence"@en ;
                                             <http://purl.obolibrary.org/obo/IAO_0000116> "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists."@en ;
@@ -450,6 +477,8 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 ###  http://purl.obolibrary.org/obo/RO_0002018
 <http://purl.obolibrary.org/obo/RO_0002018> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002180> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." ;
                                             <http://www.geneontology.org/formats/oboInOwl#created_by> "dos"^^xsd:string ;
                                             <http://www.geneontology.org/formats/oboInOwl#creation_date> "2017-05-24T09:49:21Z"^^xsd:dateTime ;
@@ -609,6 +638,8 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002411> ;
                                             owl:inverseOf <http://purl.obolibrary.org/obo/RO_0002334> ;
                                             rdf:type owl:TransitiveProperty ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/RO_0002211>
                                                                      <http://purl.obolibrary.org/obo/RO_0002025>
                                                                    ) ,
@@ -674,6 +705,7 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 ###  http://purl.obolibrary.org/obo/RO_0002215
 <http://purl.obolibrary.org/obo/RO_0002215> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002216> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000112> "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)" ,
                                                                                          "osteoclast SubClassOf 'capable of' some 'bone resorption'" ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " ;
@@ -711,6 +743,8 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 
 ###  http://purl.obolibrary.org/obo/RO_0002222
 <http://purl.obolibrary.org/obo/RO_0002222> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Chris Mungall" ;
                                             <http://purl.obolibrary.org/obo/IAO_0000119> <https://en.wikipedia.org/wiki/Allen%27s_interval_algebra> ;
@@ -725,6 +759,7 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 <http://purl.obolibrary.org/obo/RO_0002233> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000057> ;
                                             owl:inverseOf <http://purl.obolibrary.org/obo/RO_0002352> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p." ;
                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Chris Mungall" ;
@@ -912,6 +947,8 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 <http://purl.obolibrary.org/obo/RO_0002334> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002427> ;
                                             rdf:type owl:TransitiveProperty ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "inverse of regulates" ;
                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Chris Mungall" ;
                                             <http://purl.obolibrary.org/obo/IAO_0000589> "regulated by (processual)" ;
@@ -1134,6 +1171,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 ###  http://purl.obolibrary.org/obo/RO_0002434
 <http://purl.obolibrary.org/obo/RO_0002434> rdf:type owl:ObjectProperty ,
                                                      owl:SymmetricProperty ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000040> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship that holds between two entities in which the processes executed by the two entities are causally connected." ;
                                             <http://purl.obolibrary.org/obo/IAO_0000116> "Considering relabeling as 'pairwise interacts with'"^^xsd:anyURI ,
                                                                                          "This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact." ;
@@ -1172,6 +1211,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 <http://purl.obolibrary.org/obo/RO_0002448> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002436> ,
                                                                <http://purl.obolibrary.org/obo/RO_0011002> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000040> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/RO_0002327>
                                                                      <http://purl.obolibrary.org/obo/RO_0002211>
                                                                      <http://purl.obolibrary.org/obo/RO_0002333>
@@ -1188,6 +1229,8 @@ A and B can be physically interacting but not necessarily. Immediately upstream 
 ###  http://purl.obolibrary.org/obo/RO_0002449
 <http://purl.obolibrary.org/obo/RO_0002449> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002448> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000040> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/RO_0002327>
                                                                      <http://purl.obolibrary.org/obo/RO_0002630>
                                                                      <http://purl.obolibrary.org/obo/RO_0002333>
@@ -1204,6 +1247,8 @@ For example, A and B may be gene products and binding of B by A negatively regul
 ###  http://purl.obolibrary.org/obo/RO_0002450
 <http://purl.obolibrary.org/obo/RO_0002450> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002448> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000040> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/RO_0002327>
                                                                      <http://purl.obolibrary.org/obo/RO_0002629>
                                                                      <http://purl.obolibrary.org/obo/RO_0002333>
@@ -1226,6 +1271,7 @@ For example, A and B may be gene products and binding of B by A positively regul
 
 ###  http://purl.obolibrary.org/obo/RO_0002479
 <http://purl.obolibrary.org/obo/RO_0002479> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000051>
                                                                      <http://purl.obolibrary.org/obo/BFO_0000066>
                                                                    ) ;
@@ -1263,6 +1309,8 @@ For example, A and B may be gene products and binding of B by A positively regul
 ###  http://purl.obolibrary.org/obo/RO_0002501
 <http://purl.obolibrary.org/obo/RO_0002501> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002410> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q." ;
                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Chris Mungall" ;
                                             <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ro/docs/causal-relations> ;
@@ -1280,6 +1328,8 @@ For example, A and B may be gene products and binding of B by A positively regul
 ###  http://purl.obolibrary.org/obo/RO_0002506
 <http://purl.obolibrary.org/obo/RO_0002506> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002410> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000002> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000002> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000116> "The intent is that the process branch of the causal property hierarchy is primary (causal relations hold between occurrents/processes), and that the material branch is defined in terms of the process branch" ;
                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Chris Mungall" ;
                                             <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/ro/docs/causal-relations> ;
@@ -1316,6 +1366,8 @@ For example, A and B may be gene products and binding of B by A positively regul
 ###  http://purl.obolibrary.org/obo/RO_0002566
 <http://purl.obolibrary.org/obo/RO_0002566> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002506> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000002> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000002> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/RO_0002327>
                                                                      <http://purl.obolibrary.org/obo/RO_0002411>
                                                                      <http://purl.obolibrary.org/obo/RO_0002233>
@@ -1363,6 +1415,8 @@ For example, A and B may be gene products and binding of B by A positively regul
 ###  http://purl.obolibrary.org/obo/RO_0002595
 <http://purl.obolibrary.org/obo/RO_0002595> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002410> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity." ;
                                             <http://purl.obolibrary.org/obo/IAO_0000116> "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." ;
                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Chris Mungall" ;
@@ -1444,6 +1498,7 @@ For example, A and B may be gene products and binding of B by A positively regul
 ###  http://purl.obolibrary.org/obo/RO_0004028
 <http://purl.obolibrary.org/obo/RO_0004028> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002410> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000040> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/RO_0009501>
                                                                      <http://purl.obolibrary.org/obo/RO_0002233>
                                                                    ) ;
@@ -1545,6 +1600,7 @@ For example, A and B may be gene products and binding of B by A positively regul
 ###  http://purl.obolibrary.org/obo/RO_0009501
 <http://purl.obolibrary.org/obo/RO_0009501> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002410> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000054>
                                                                      <http://purl.obolibrary.org/obo/RO_0002404>
                                                                    ) ;
@@ -1571,6 +1627,7 @@ For example, A and B may be gene products and binding of B by A positively regul
 ###  http://purl.obolibrary.org/obo/RO_0010001
 <http://purl.obolibrary.org/obo/RO_0010001> rdf:type owl:ObjectProperty ;
                                             owl:inverseOf <http://purl.obolibrary.org/obo/RO_0010002> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000031> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/RO_0000052>
                                                                      <http://purl.obolibrary.org/obo/RO_0000058>
                                                                    ) ;
@@ -1587,6 +1644,7 @@ For example, A and B may be gene products and binding of B by A positively regul
 
 ###  http://purl.obolibrary.org/obo/RO_0010002
 <http://purl.obolibrary.org/obo/RO_0010002> rdf:type owl:ObjectProperty ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000031> ;
                                             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/RO_0000059>
                                                                      <http://purl.obolibrary.org/obo/RO_0000053>
                                                                    ) ;
@@ -1601,20 +1659,167 @@ For example, A and B may be gene products and binding of B by A positively regul
 ###  http://purl.obolibrary.org/obo/RO_0011002
 <http://purl.obolibrary.org/obo/RO_0011002> rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002566> ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000040> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B." ;
                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Vasundra Touré" ;
                                             rdfs:label "regulates activity of" .
 
 
 #################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000002
+<http://purl.obolibrary.org/obo/BFO_0000002> rdf:type owl:Class ;
+                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                               owl:allValuesFrom <http://purl.obolibrary.org/obo/BFO_0000002>
+                                                             ] ;
+                                             owl:disjointWith <http://purl.obolibrary.org/obo/BFO_0000003> ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000003>
+                                                              ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en ;
+                                             rdfs:label "continuant"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000003
+<http://purl.obolibrary.org/obo/BFO_0000003> rdf:type owl:Class ;
+                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                               owl:allValuesFrom <http://purl.obolibrary.org/obo/BFO_0000003>
+                                                             ] ;
+                                             owl:disjointWith [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000002>
+                                                              ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An entity that has temporal parts and that happens, unfolds or develops through time."@en ;
+                                             rdfs:label "occurrent"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."@en ;
+                                             rdfs:label "process"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000019
+<http://purl.obolibrary.org/obo/BFO_0000019> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000020> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                               owl:allValuesFrom <http://purl.obolibrary.org/obo/BFO_0000019>
+                                                             ] ;
+                                             rdfs:label "quality"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000020
+<http://purl.obolibrary.org/obo/BFO_0000020> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                               owl:allValuesFrom <http://purl.obolibrary.org/obo/BFO_0000020>
+                                                             ] ;
+                                             owl:disjointWith <http://purl.obolibrary.org/obo/BFO_0000031> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en ;
+                                             rdfs:label "specifically dependent continuant"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000023
+<http://purl.obolibrary.org/obo/BFO_0000023> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000020> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts."@en ;
+                                             rdfs:label "role"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000031
+<http://purl.obolibrary.org/obo/BFO_0000031> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                               owl:allValuesFrom <http://purl.obolibrary.org/obo/BFO_0000031>
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time."@en ;
+                                             rdfs:label "generically dependent continuant"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+<http://purl.obolibrary.org/obo/BFO_0000040> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000002> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en ;
+                                             rdfs:label "material entity"@en .
+
+
+###  http://purl.obolibrary.org/obo/GO_0008150
+<http://purl.obolibrary.org/obo/GO_0008150> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                            rdfs:label "biological_process"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/GO_0016301
+<http://purl.obolibrary.org/obo/GO_0016301> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002481> ;
+                                                              owl:hasSelf "true"^^xsd:boolean
+                                                            ] ;
+                                            rdfs:label "kinase activity"^^xsd:string .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002566> ;
+  owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040> ;
+  rdfs:subClassOf [ rdf:type owl:Class ;
+                    owl:unionOf ( [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002418> ;
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000015>
+                                                       ]
+                                  ]
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0002215> ;
+                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                         owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002418> ;
+                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000015>
+                                                                            ]
+                                                       ]
+                                  ]
+                                )
+                  ]
+] .
+
+
+#################################################################
 #    Rules
 #################################################################
 
-<urn:swrl#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl#z> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 <urn:swrl#y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-<urn:swrl#z> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl#a1> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl#a2> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl#g1> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl#g2> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 <urn:swrl#B> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
@@ -1631,6 +1836,111 @@ For example, A and B may be gene products and binding of B by A positively regul
 <urn:swrl#in> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 <urn:swrl#mf2> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002180> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#p>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002018> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "GP(X)-enables->MF(Y)-part_of->BP(Z) => GP(X) involved_in BP(Z) e.g. if X enables 'protein kinase activity' and Y 'part of' 'signal tranduction' then X involved in 'signal transduction'"^^xsd:string ;
+   rdfs:label "involved in BP"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://purl.obolibrary.org/obo/GO_0008150> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002327> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002331> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002578> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a1> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#a2>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> <http://purl.obolibrary.org/obo/GO_0016301> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a1>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002333> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a1> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#g1>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002333> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#a2> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#g2>
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002447> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#g1> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#g2>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
 
 [ rdfs:comment "This rule is dubious: added as a quick fix for expected inference in GO-CAM.  The problem is most acute for transmembrane proteins, such as receptors or cell adhesion molecules, which have some subfunctions inside the cell (e.g. kinase activity) and some subfunctions outside (e.g. ligand binding).  Correct annotation of where these functions occurs leads to incorrect inference about the location of the whole protein.  This should probably be weakened to \"... -> overlaps\"" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
@@ -1894,6 +2204,70 @@ For example, A and B may be gene products and binding of B by A positively regul
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#mf2>
                                                      ] ;
                                            rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdfs:label "'causally downstream of' and 'overlaps' should be disjoint properties (a SWRL rule is required because these are non-simple properties)." ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002131> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002404> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> owl:Nothing ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> owl:Nothing ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+[ rdfs:label "'causally upstream of' and 'overlaps' should be disjoint properties (a SWRL rule is required because these are non-simple properties)." ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002131> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.obolibrary.org/obo/RO_0002411> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> owl:Nothing ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> owl:Nothing ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
                                          ]
  ] .
 
