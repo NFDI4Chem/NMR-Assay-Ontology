@@ -12,7 +12,8 @@ do
         --method BOT \
         --input $prefix.owl \
         --term-file terms_$prefix.txt \
-        --intermediates minimal \
+        --intermediates none \
+        --annotate-with-source true \
         --output extracted_$prefix.owl
 
         # convert owl to ttl and remove owl

@@ -13,67 +13,107 @@
 #################################################################
 
 ###  http://purl.obolibrary.org/obo/BFO_0000179
-<http://purl.obolibrary.org/obo/BFO_0000179> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/BFO_0000179> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000180
-<http://purl.obolibrary.org/obo/BFO_0000180> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/BFO_0000180> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000111
-<http://purl.obolibrary.org/obo/IAO_0000111> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000111> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000112
-<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000114
-<http://purl.obolibrary.org/obo/IAO_0000114> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000114> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000115
-<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000116
-<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000117
-<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000118
-<http://purl.obolibrary.org/obo/IAO_0000118> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000118> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000119
-<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000233
-<http://purl.obolibrary.org/obo/IAO_0000233> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000233> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000600
-<http://purl.obolibrary.org/obo/IAO_0000600> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000600> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000601
-<http://purl.obolibrary.org/obo/IAO_0000601> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000601> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000602
-<http://purl.obolibrary.org/obo/IAO_0000602> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0000602> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0010000
-<http://purl.obolibrary.org/obo/IAO_0010000> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/IAO_0010000> rdf:type owl:AnnotationProperty ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0001900
-<http://purl.obolibrary.org/obo/RO_0001900> rdf:type owl:AnnotationProperty .
+<http://purl.obolibrary.org/obo/RO_0001900> rdf:type owl:AnnotationProperty ;
+                                            rdfs:isDefinedBy <http://purl.obolibrary.org/obo/ro.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema.owl> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral
+rdf:PlainLiteral rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns.owl> .
 
 
 #################################################################
@@ -96,6 +136,7 @@
 A continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."""@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000118> "part_of"@en ;
                                              <http://purl.obolibrary.org/obo/RO_0001900> <http://purl.obolibrary.org/obo/RO_0001901> ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
                                              rdfs:label "part of"@en ;
                                              rdfs:seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" .
 
@@ -115,6 +156,7 @@ A continuant cannot be part of an occurrent: use 'participates in'. An occurrent
 A continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."""@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000118> "has_part"@en ;
                                              <http://purl.obolibrary.org/obo/RO_0001900> <http://purl.obolibrary.org/obo/RO_0001901> ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
                                              rdfs:label "has part"@en .
 
 
@@ -122,7 +164,7 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 <http://purl.obolibrary.org/obo/IAO_0000039> rdf:type owl:ObjectProperty ;
                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
                                              rdf:type owl:FunctionalProperty ;
-                                             rdfs:range <http://purl.obolibrary.org/obo/IAO_0000003> ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "has measurement unit label"@en .
 
 
@@ -139,6 +181,7 @@ We will try to build it back up by elaborating the various subproperties that ar
 Some currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic."""@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "person:Alan Ruttenberg"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "Smith, Ceusters, Ruttenberg, 2000 years of philosophy"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "is about"@en .
 
 
@@ -147,7 +190,6 @@ Some currently missing phenomena that should be considered \"about\" are predica
                                              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
                                              owl:inverseOf <http://purl.obolibrary.org/obo/IAO_0000235> ;
                                              rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "A person's name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance \"Alan\" can denote different people. In each case of use, there is a case of the denotation relation obtaining, between \"Alan\" and the person that is being named."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> """2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have 'specifically denotes', which would have been primitive, so make this relation primitive.
@@ -158,16 +200,17 @@ every c that is a concretization of g specifically denotes r"""@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "person:Alan Ruttenberg"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan"@en ;
                                              rdfs:comment ""@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "denotes"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000235
 <http://purl.obolibrary.org/obo/IAO_0000235> rdf:type owl:ObjectProperty ;
-                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
                                              rdfs:range <http://purl.obolibrary.org/obo/IAO_0000030> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "inverse of the relation 'denotes'"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Person: Jie Zheng, Chris Stoeckert, Mike Conlon"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000233> <https://github.com/information-artifact-ontology/IAO/issues/206> ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "denoted by"@en .
 
 
@@ -175,123 +218,8 @@ every c that is a concretization of g specifically denotes r"""@en ;
 #    Classes
 #################################################################
 
-###  http://purl.obolibrary.org/obo/BFO_0000001
-<http://purl.obolibrary.org/obo/BFO_0000001> rdf:type owl:Class ;
-                                             <http://purl.obolibrary.org/obo/BFO_0000179> "entity" ;
-                                             <http://purl.obolibrary.org/obo/BFO_0000180> "Entity" ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Julius Caesar"@en ,
-                                                                                          "Verdi’s Requiem"@en ,
-                                                                                          "the Second World War"@en ,
-                                                                                          "your body mass index"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000116> "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81"@en ,
-                                                                                          "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000600> "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])"@en ;
-                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
-                                             rdfs:label "entity"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000001> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000116> ;
-   owl:annotatedTarget "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"@en ;
-   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/0000004> ;
-   rdfs:comment "per discussion with Barry Smith" ;
-   rdfs:seeAlso <http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000001> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000600> ;
-   owl:annotatedTarget "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])"@en ;
-   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/001-001>
- ] .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000002
-<http://purl.obolibrary.org/obo/BFO_0000002> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000001> ;
-                                             <http://purl.obolibrary.org/obo/BFO_0000179> "continuant" ;
-                                             <http://purl.obolibrary.org/obo/BFO_0000180> "Continuant" ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000116> "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240"@en ,
-                                                                                          "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000600> "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000601> "if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])"@en ,
-                                                                                          "if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])"@en ,
-                                                                                          "if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000602> "(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] " ,
-                                                                                          "(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] " ,
-                                                                                          "(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] " ,
-                                                                                          "(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] " ;
-                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/bfo.owl> ;
-                                             rdfs:label "continuant"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000002> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000602> ;
-   owl:annotatedTarget "(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] " ;
-   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/008-002>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000002> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000602> ;
-   owl:annotatedTarget "(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] " ;
-   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/011-002>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000002> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000116> ;
-   owl:annotatedTarget "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants"@en ;
-   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/0000007>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000002> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000600> ;
-   owl:annotatedTarget "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])"@en ;
-   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/008-002>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000002> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000601> ;
-   owl:annotatedTarget "if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])"@en ;
-   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/126-001>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000002> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000601> ;
-   owl:annotatedTarget "if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])"@en ;
-   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/009-002>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000002> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000601> ;
-   owl:annotatedTarget "if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])"@en ;
-   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/011-002>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000002> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000602> ;
-   owl:annotatedTarget "(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] " ;
-   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/009-002>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000002> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000602> ;
-   owl:annotatedTarget "(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] " ;
-   <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/126-001>
- ] .
-
-
 ###  http://purl.obolibrary.org/obo/BFO_0000017
 <http://purl.obolibrary.org/obo/BFO_0000017> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000002> ;
                                              <http://purl.obolibrary.org/obo/BFO_0000179> "realizable" ;
                                              <http://purl.obolibrary.org/obo/BFO_0000180> "RealizableEntity" ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "the disposition of this piece of metal to conduct electricity."@en ,
@@ -336,24 +264,6 @@ every c that is a concretization of g specifically denotes r"""@en ;
  ] .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0000003
-<http://purl.obolibrary.org/obo/IAO_0000003> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000111> "measurement unit label"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Examples of measurement unit labels are liters, inches, weight per volume."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000116> """2009-03-16: provenance: a term measurement unit was
-proposed for OBI (OBI_0000176) , edited by Chris Stoeckert and
-Cristian Cocos, and subsequently moved to IAO where the objective for
-which the original term was defined was satisfied with the definition
-of this, different, term."""@en ,
-                                                                                          "2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
-                                                                                          "PERSON: Melanie Courtot"@en ;
-                                             rdfs:label "measurement unit label"@en .
-
-
 ###  http://purl.obolibrary.org/obo/IAO_0000005
 <http://purl.obolibrary.org/obo/IAO_0000005> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
@@ -371,6 +281,7 @@ of this, different, term."""@en ,
                                              <http://purl.obolibrary.org/obo/IAO_0000118> "goal specification"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "OBI Plan and Planned Process/Roles Branch"@en ,
                                                                                           "OBI_0000217"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "objective specification"@en .
 
 
@@ -382,20 +293,13 @@ of this, different, term."""@en ,
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity that describes an action the bearer will take."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "OBI Plan and Planned Process branch"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "action specification"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000010
 <http://purl.obolibrary.org/obo/IAO_0000010> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ,
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000005>
-                                                             ] ,
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000007>
-                                                             ] ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "software"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> """Software is a plan specification composed of a series of instructions that can be 
@@ -406,16 +310,12 @@ interpreted by or directly executed by a processing unit."""@en ;
                                                                                           "PERSON: Chris Stoeckert"@en ,
                                                                                           "PERSON: Melanie Courtot"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP: OBI"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "software"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000030
 <http://purl.obolibrary.org/obo/IAO_0000030> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000001>
-                                                             ] ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "information content entity"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "Examples of information content entites include journal articles, data, graphical layouts, and graphs."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
@@ -426,6 +326,7 @@ interpreted by or directly executed by a processing unit."""@en ;
 Previous. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity."""@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Chris Stoeckert"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "OBI_0000142"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "information content entity"@en .
 
 
@@ -444,78 +345,40 @@ Previous. An information content entity is a non-realizable information entity t
                                                                                           "Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
                                                                                           "PERSON: Bjoern Peters"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "directive information entity"@en .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0000078
-<http://purl.obolibrary.org/obo/IAO_0000078> rdf:type owl:Class ;
-                                             owl:equivalentClass [ rdf:type owl:Class ;
-                                                                   owl:oneOf ( <http://purl.obolibrary.org/obo/IAO_0000002>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000120>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000121>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000122>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000123>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000124>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000125>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000423>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000428>
-                                                                             )
-                                                                 ] ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000102> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000111> "curation status specification"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000116> "Better to represent curation as a process with parts and then relate labels to that process (in IAO meeting)"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Bill Bug"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ,
-                                                                                          "OBI_0000266"@en ;
-                                             rdfs:label "curation status specification"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000102
-<http://purl.obolibrary.org/obo/IAO_0000102> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000111> "data about an ontology part"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Data about an ontology part is a data item about a part of an ontology, for example a term"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Person:Alan Ruttenberg"@en ;
-                                             rdfs:label "data about an ontology part"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000225
-<http://purl.obolibrary.org/obo/IAO_0000225> rdf:type owl:Class ;
-                                             owl:equivalentClass [ rdf:type owl:Class ;
-                                                                   owl:oneOf ( <http://purl.obolibrary.org/obo/IAO_0000103>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000226>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000227>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000228>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000229>
-                                                                             )
-                                                                 ] ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000102> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000111> "obsolescence reason specification"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000116> "The creation of this class has been inspired in part by Werner Ceusters' paper, Applying evolutionary terminology auditing to the Gene Ontology."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
-                                                                                          "PERSON: Melanie Courtot"@en ;
-                                             rdfs:label "obsolescence reason specification"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000409
-<http://purl.obolibrary.org/obo/IAO_0000409> rdf:type owl:Class ;
-                                             owl:equivalentClass [ rdf:type owl:Class ;
-                                                                   owl:oneOf ( <http://purl.obolibrary.org/obo/IAO_0000410>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000420>
-                                                                               <http://purl.obolibrary.org/obo/IAO_0000421>
-                                                                             )
-                                                                 ] ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000102> ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000111> "denotator type"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000112> "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities."@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A denotator type indicates how a term should be interpreted from an ontological perspective."@en ;
+###  http://purl.obolibrary.org/obo/IAO_0000104
+<http://purl.obolibrary.org/obo/IAO_0000104> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000005>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000007>
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "plan specification"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was \" a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan\". It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term."@en ,
+                                                                                          "2014-03-31: A plan specification can have other parts, such as conditional specifications."@en ,
+                                                                                          "Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
-                                             <http://purl.obolibrary.org/obo/IAO_0000119> "Barry Smith, Werner Ceusters"@en ;
-                                             rdfs:label "denotator type"@en .
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI Plan and Planned Process branch"@en ,
+                                                                                          "OBI_0000344"@en ;
+                                             rdfs:comment """2/3/2009 Comment from OBI review.
+
+Action specification not well enough specified.
+Conditional specification not well enough specified.
+Question whether all plan specifications have objective specifications.
+
+Request that IAO either clarify these or change definitions not to use them"""@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "plan specification"@en .
 
 
 #################################################################
@@ -523,148 +386,155 @@ Previous. An information content entity is a non-realizable information entity t
 #################################################################
 
 ###  http://purl.obolibrary.org/obo/IAO_0000002
-<http://purl.obolibrary.org/obo/IAO_0000002> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ;
+<http://purl.obolibrary.org/obo/IAO_0000002> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "example to be eventually removed"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "example to be eventually removed"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000103
-<http://purl.obolibrary.org/obo/IAO_0000103> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ;
+<http://purl.obolibrary.org/obo/IAO_0000103> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "failed exploratory term"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Person:Alan Ruttenberg"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "failed exploratory term"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000120
-<http://purl.obolibrary.org/obo/IAO_0000120> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ;
+<http://purl.obolibrary.org/obo/IAO_0000120> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "metadata complete"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "metadata complete"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000121
-<http://purl.obolibrary.org/obo/IAO_0000121> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ;
+<http://purl.obolibrary.org/obo/IAO_0000121> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "organizational term"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "organizational term"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000122
-<http://purl.obolibrary.org/obo/IAO_0000122> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ;
+<http://purl.obolibrary.org/obo/IAO_0000122> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "ready for release"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "ready for release"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000123
-<http://purl.obolibrary.org/obo/IAO_0000123> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ;
+<http://purl.obolibrary.org/obo/IAO_0000123> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "metadata incomplete"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "metadata incomplete"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000124
-<http://purl.obolibrary.org/obo/IAO_0000124> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ;
+<http://purl.obolibrary.org/obo/IAO_0000124> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "uncurated"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "uncurated"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000125
-<http://purl.obolibrary.org/obo/IAO_0000125> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ;
+<http://purl.obolibrary.org/obo/IAO_0000125> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "pending final vetting"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "pending final vetting"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000226
-<http://purl.obolibrary.org/obo/IAO_0000226> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ;
+<http://purl.obolibrary.org/obo/IAO_0000226> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "placeholder removed"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "placeholder removed"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000227
-<http://purl.obolibrary.org/obo/IAO_0000227> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ;
+<http://purl.obolibrary.org/obo/IAO_0000227> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "terms merged"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "An editor note should explain what were the merged terms and the reason for the merge."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "terms merged"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000228
-<http://purl.obolibrary.org/obo/IAO_0000228> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ;
+<http://purl.obolibrary.org/obo/IAO_0000228> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "term imported"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "term imported"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000229
-<http://purl.obolibrary.org/obo/IAO_0000229> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ;
+<http://purl.obolibrary.org/obo/IAO_0000229> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "term split"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "term split"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000410
-<http://purl.obolibrary.org/obo/IAO_0000410> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000409> ;
+<http://purl.obolibrary.org/obo/IAO_0000410> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "universal"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "universal"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000420
-<http://purl.obolibrary.org/obo/IAO_0000420> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000409> ;
+<http://purl.obolibrary.org/obo/IAO_0000420> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "defined class"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "defined class"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000421
-<http://purl.obolibrary.org/obo/IAO_0000421> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000409> ;
+<http://purl.obolibrary.org/obo/IAO_0000421> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "named class expression"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "named class expression"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000423
-<http://purl.obolibrary.org/obo/IAO_0000423> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ;
+<http://purl.obolibrary.org/obo/IAO_0000423> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "to be replaced with external ontology term"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Terms with this status should eventually replaced with a term from another ontology."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "group:OBI"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "to be replaced with external ontology term"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000428
-<http://purl.obolibrary.org/obo/IAO_0000428> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ;
+<http://purl.obolibrary.org/obo/IAO_0000428> rdf:type owl:NamedIndividual ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "requires discussion"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "group:OBI"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
                                              rdfs:label "requires discussion"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.obolibrary.org/obo/IAO_0000232> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> .
 
 
 #################################################################
