@@ -82,6 +82,3 @@ jobs:
         with:
           name: extracted_terms
           path: .github/workflows/robot_extract/*.ttl
-
-
-# removed from ontologies.txt: chebi http://purl.obolibrary.org/obo/chebi.owl BOT none
