@@ -37,14 +37,14 @@ jobs:
 
     # issue: cache is caching ontologies.txt - shouldn't!! Hence this step and next (download source ontologies) are disabled
     # todo: create ontotologies_files.txt from ontologies.txt
-      - uses: actions/cache@v2
-        id: cache
-        with:
-          path: .github/workflows/robot_extract
-          key: ${{ runner.os }}-ontologies-${{ hashFiles('**/ontotologies_files.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-ontologies-
-       # NOTE: in order to cache the ontology files their filenames need to be saved in ontotologies_files.txt  
+      # - uses: actions/cache@v2
+      #   id: cache
+      #   with:
+      #     path: .github/workflows/robot_extract
+      #     key: ${{ runner.os }}-ontologies-${{ hashFiles('**/ontotologies_files.txt') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-ontologies-
+      #  # NOTE: in order to cache the ontology files their filenames need to be saved in ontotologies_files.txt  
         
       - name: download source ontologies
         run: |
