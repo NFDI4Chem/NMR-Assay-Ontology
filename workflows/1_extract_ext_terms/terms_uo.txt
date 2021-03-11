@@ -1,1 +1,0 @@
-http://purl.obolibrary.org/obo/UO_0000005  # Class: temperature unit

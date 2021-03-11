@@ -1,1 +1,0 @@
-http://purl.obolibrary.org/obo/CHMO_0001148  # Class: 1H–13C heteronuclear multiple bond coherence

@@ -1,1 +1,0 @@
-http://purl.obolibrary.org/obo/APOLLO_SV_00000106  # Class: complete software identifier
