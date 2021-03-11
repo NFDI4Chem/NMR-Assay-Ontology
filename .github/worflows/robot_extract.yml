@@ -1,0 +1,87 @@
+name: Robot - extract ontology terms
+
+# description: extracts the terms from ontologies listed in `ontologies.txt` using [ROBOT](http://robot.obolibrary.org/) extract
+# according to list of terms written in the ontology terms files (terms_*.txt)
+# using the `ROBOT extract` action with:
+# * `--method` (TOP, BOT, STAR) 
+# * `--intermediate` (all, minimal, none)
+# 
+# **ontologies.txt file strcture**:
+# `prefix uri --method_value --intermediate_value`
+# Example:
+# ```
+# iao http://purl.obolibrary.org/obo/iao.owl BOT none
+# uo http://purl.obolibrary.org/obo/uo.owl TOP minimal
+# ```
+# working dir: .github/workflows/robot_extract/
+
+on:
+  workflow_dispatch:
+
+jobs:
+  extract-terms-from-ontologies:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: install ROBOT
+        run: |
+          wget --quiet https://github.com/ontodev/robot/releases/download/v1.8.1/robot.jar
+          curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot 
+          chmod +x robot
+          ls -l .
+          sudo mv ./robot /usr/local/bin
+          sudo mv ./robot.jar /usr/local/bin
+          robot --help
+
+    # issue: cache is caching ontologies.txt - shouldn't!! Hence this step and next (download source ontologies) are disabled
+    # todo: create ontotologies_files.txt from ontologies.txt
+      - uses: actions/cache@v2
+        id: cache
+        with:
+          path: .github/workflows/robot_extract
+          key: ${{ runner.os }}-ontologies-${{ hashFiles('**/ontotologies_files.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-ontologies-
+       # NOTE: in order to cache the ontology files their filenames need to be saved in ontotologies_files.txt  
+        
+      - name: download source ontologies
+        run: |
+          cd .github/workflows/robot_extract
+          echo "---- ontologies.txt content ----"          
+          cat ontologies.txt
+          echo "---- download ontology owl files ----"
+          while read -r prefix uri method inter; do echo $uri; wget --quiet $uri -c; done < "ontologies.txt"
+          ls .
+
+      - name: extract terms from ontologies into single .ttl files
+        run: |
+          cd .github/workflows/robot_extract
+          echo "---- extract terms from ontology owl files ----"          
+          while read -r prefix uri method inter; do if test -f "terms_$prefix.txt"; \
+          then robot extract --method $method --input $prefix.owl --term-file terms_$prefix.txt --intermediates $inter \
+          --annotate-with-source true --output extracted_$prefix.owl; \
+          fi; \
+          done < "ontologies.txt"
+          echo "---- convert extracted terms files to ttl ----"
+          while read -r prefix uri method inter; do if test -f "terms_$prefix.txt"; \
+          then robot convert --input extracted_$prefix.owl --output extracted_$prefix.ttl; \
+          fi; \
+          done < "ontologies.txt"
+      # values for vars $prefix $uri $method $inter are set in ontologies.txt
+
+
+      - name: merge extracted terms into  merged.ttl 
+        run: |
+          cd .github/workflows/robot_extract     
+          robot merge --inputs "extracted_*.owl" --output merged.owl
+          robot convert --input merged.owl --output merged.ttl 
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: extracted_terms
+          path: .github/workflows/robot_extract/*.ttl
+
+
+# removed from ontologies.txt: chebi http://purl.obolibrary.org/obo/chebi.owl BOT none

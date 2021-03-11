@@ -1,1 +1,3 @@
-workflows/1_extract_ext_terms/*.owl
+robot.jar
+.github/workflows/robot_extract/*.owl
+/.vscode/
