@@ -5,4 +5,3 @@ uo http://purl.obolibrary.org/obo/uo.owl TOP minimal
 obi http://purl.obolibrary.org/obo/obi.owl BOT none
 apollo_sv http://purl.obolibrary.org/obo/apollo_sv.owl BOT none
 chmo http://purl.obolibrary.org/obo/chmo.owl BOT none
-chebi http://purl.obolibrary.org/obo/chebi.owl BOT none
