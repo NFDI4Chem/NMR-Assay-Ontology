@@ -1,0 +1,224 @@
+@prefix : <https://github.com/NFDI4Chem/NMR-Assay-Ontology/blob/main/NMR-Assay-Ontology.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://github.com/NFDI4Chem/NMR-Assay-Ontology/blob/main/NMR-Assay-Ontology.ttl> .
+
+<https://github.com/NFDI4Chem/NMR-Assay-Ontology/blob/main/NMR-Assay-Ontology.ttl> rdf:type owl:Ontology ;
+                                                                                    <http://purl.org/dc/terms/abstract> """The NMR Assay Ontology is an OBO Foundary based ontology rooted in the domain of chemistry. Its primary use case is the sufficient description of NMR spectroscopy assay data. This entails being able to make statements about the chosen study design, assay execution parameters and meassurements as well as the produced NMR assay data output (e.g. NMR spectra).
+
+Annotating NMR datasets with this ontology is supposed to foster the use of knowledge graphs in the FAIR storage of publicly funded research data."""@en ;
+                                                                                    <http://purl.org/dc/terms/contributor> "PERSON: André Castro"@en ,
+                                                                                                                           "PERSON: Philip Strömert"@en ;
+                                                                                    <http://purl.org/dc/terms/creator> "https://nfdi4chem.de"@en ;
+                                                                                    <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"@en ;
+                                                                                    rdfs:label "NMR Assay Ontology"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000111
+<http://purl.obolibrary.org/obo/IAO_0000111> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "editor preferred term"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Daniel Schober"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "editor preferred term"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "example of usage"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Daniel Schober"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "example of usage"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000114
+<http://purl.obolibrary.org/obo/IAO_0000114> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "has curation status"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Alan Ruttenberg"@en ,
+                                                                                          "PERSON:Bill Bug"@en ,
+                                                                                          "PERSON:Melanie Courtot"@en ;
+                                             rdfs:label "has curation status"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "definition"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> """2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  """@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Daniel Schober"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "definition" ,
+                                                        "definition"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "editor note"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Daniel Schober"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "editor note"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "term editor"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Daniel Schober"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "definition editor" ,
+                                                        "definition editor"@en ,
+                                                        "term editor" ,
+                                                        "term editor"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000118
+<http://purl.obolibrary.org/obo/IAO_0000118> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "alternative term"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Daniel Schober"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "alternative term"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "definition source"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Daniel Schober"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"@en ,
+                                                                                          "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "definition source"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000231
+<http://purl.obolibrary.org/obo/IAO_0000231> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "has obsolescence reason"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Alan Ruttenberg"@en ,
+                                                                                          "PERSON:Melanie Courtot"@en ;
+                                             rdfs:label "has obsolescence reason"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000232
+<http://purl.obolibrary.org/obo/IAO_0000232> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "curator note"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An administrative note of use for a curator but of no use for a user"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Alan Ruttenberg"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "curator note"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000233
+<http://purl.obolibrary.org/obo/IAO_0000233> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "term tracker item"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An IRI or similar locator for a request or discussion of an ontology term."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
+                                             rdfs:comment "The 'tracker item' can associate a tracker with a specific ontology term."@en ;
+                                             rdfs:label "term tracker item"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000600
+<http://purl.obolibrary.org/obo/IAO_0000600> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "elucidation"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "person:Alan Ruttenberg"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "Person:Barry Smith"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000600> "Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms"@en ;
+                                             rdfs:isDefinedBy <http://purl.obolibrary.org/obo/iao.owl> ;
+                                             rdfs:label "elucidation"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0006011
+<http://purl.obolibrary.org/obo/IAO_0006011> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "may be identical to"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A annotation relationship between two terms in an ontology that may refer to the same (natural) type but where more evidence is required before terms are merged."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "David Osumi-Sutherland"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000233> "#40"@en ;
+                                             rdfs:comment "Edges asserting this should be annotated with to record evidence supporting the assertion and its provenance."@en ;
+                                             rdfs:label "may be identical to"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0100001
+<http://purl.obolibrary.org/obo/IAO_0100001> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "term replaced by"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "Use on obsolete terms, relating the term to another term that can be used as a substitute"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Person:Alan Ruttenberg"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "Person:Alan Ruttenberg"@en ;
+                                             rdfs:comment "Add as annotation triples in the granting ontology"@en ;
+                                             rdfs:label "term replaced by"@en .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty ;
+                                    <http://purl.obolibrary.org/obo/IAO_0000115> "A summary of the resource."@en ;
+                                    rdfs:label "Abstract"@en .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty ;
+                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An entity responsible for making contributions to the resource."@en ;
+                                       rdfs:comment "The guidelines for using names of persons or organizations as creators apply to contributors."@en ;
+                                       rdfs:label "Contributor"@en .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty ;
+                                   <http://purl.obolibrary.org/obo/IAO_0000115> "An entity responsible for making the resource."@en ;
+                                   rdfs:comment "Recommended practice is to identify the creator with a URI. If this is not possible or feasible, a literal value that identifies the creator may be provided."@en ;
+                                   rdfs:label "Creator"@en .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty ;
+                                   <http://purl.obolibrary.org/obo/IAO_0000115> "A legal document giving official permission to do something with the resource."@en ;
+                                   rdfs:comment "Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided."@en ;
+                                   rdfs:label "License"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
