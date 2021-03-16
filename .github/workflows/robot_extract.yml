@@ -27,7 +27,7 @@ jobs:
 
       - name: install ROBOT
         run: |
-          wget --quiet https://github.com/ontodev/robot/releases/download/v1.7.0/robot.jar
+          wget --quiet https://github.com/ontodev/robot/releases/download/v1.8.1/robot.jar
           curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot 
           chmod +x robot
           ls -l .
@@ -89,7 +89,7 @@ jobs:
       - name: merge extracted terms into  merged.ttl 
         run: |
           cd .github/workflows/robot_extract     
-          robot merge --inputs "extracted_*.ttl" --output merged.ttl
+          robot merge --inputs "extracted_*.ttl" --output merged.ttl -v
         # robot convert --input merged.owl --output merged.ttl 
 
       - uses: actions/upload-artifact@v2
