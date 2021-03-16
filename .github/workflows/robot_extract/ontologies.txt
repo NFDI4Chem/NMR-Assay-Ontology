@@ -1,4 +1,3 @@
-chebi http://purl.obolibrary.org/obo/chebi.owl BOT none
 bfo http://purl.obolibrary.org/obo/bfo.owl BOT none 
 ro http://purl.obolibrary.org/obo/ro.owl BOT none
 iao http://purl.obolibrary.org/obo/iao.owl BOT none
