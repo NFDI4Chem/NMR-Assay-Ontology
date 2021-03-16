@@ -33,7 +33,8 @@ jobs:
           ls -l .
           sudo mv ./robot /usr/local/bin
           sudo mv ./robot.jar /usr/local/bin
-          robot --help
+          echo "ROBOT version:"
+          robot -V
 
       - name: mkdir ontologies
         run: |
@@ -72,10 +73,10 @@ jobs:
           echo "---- extract terms from ontology owl files ----"          
           while read -r prefix uri method inter; do if test -f "terms_$prefix.txt"; \
           then robot extract --method $method --input ontologies/$prefix.owl --term-file terms_$prefix.txt --intermediates $inter \
-          --annotate-with-source true --output extracted_$prefix.ttl; \
+          --annotate-with-source true --output extracted_$prefix.ttl --verbose; \
           fi; \
           done < "ontologies.txt"
-          
+
         # robot extract --method $method --input ontologies/$prefix.owl --term-file terms_$prefix.txt --intermediates $inter  --annotate-with-source true --output extracted_$prefix.ttl;
 
         # echo "---- convert extracted terms files to ttl ----"
