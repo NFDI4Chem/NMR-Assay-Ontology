@@ -64,7 +64,7 @@ jobs:
         run: |
           cd .github/workflows/robot_extract
           echo "---- ls ontologies/ dir ----"          
-          ls ./ontologies
+          ls -l ./ontologies
         
       - name: extract terms from ontologies into single .ttl files
         run: |
@@ -72,14 +72,14 @@ jobs:
           echo "---- extract terms from ontology owl files ----"          
           while read -r prefix uri method inter; do if test -f "terms_$prefix.txt"; \
           then robot extract --method $method --input ontologies/$prefix.owl --term-file terms_$prefix.txt --intermediates $inter \
-          --annotate-with-source true --output extracted_$prefix.owl; \
+          --annotate-with-source true --output extracted_$prefix.ttl; \
           fi; \
           done < "ontologies.txt"
-          echo "---- convert extracted terms files to ttl ----"
-          while read -r prefix uri method inter; do if test -f "terms_$prefix.txt"; \
-          then robot convert --input extracted_$prefix.owl --output extracted_$prefix.ttl; \
-          fi; \
-          done < "ontologies.txt"
+        # echo "---- convert extracted terms files to ttl ----"
+        # while read -r prefix uri method inter; do if test -f "terms_$prefix.txt"; \
+        # then robot convert --input extracted_$prefix.owl --output extracted_$prefix.ttl; \
+        # fi; \
+        # done < "ontologies.txt"
         # values for vars $prefix $uri $method $inter are set in ontologies.txt
 
       - name: merge extracted terms into  merged.ttl 
