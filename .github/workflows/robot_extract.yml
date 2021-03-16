@@ -71,7 +71,10 @@ jobs:
           cd .github/workflows/robot_extract
           echo "---- extract terms from ontology owl files ----"          
           while read -r prefix uri method inter; do if test -f "terms_$prefix.txt"; \
-          then robot extract --method $method --input ontologies/$prefix.owl --term-file terms_$prefix.txt --intermediates $inter \
+          then \
+          echo "---> robot extract --method $method --input ontologies/$prefix.owl --term-file terms_$prefix.txt --intermediates $inter \
+          --annotate-with-source true --output extracted_$prefix.ttl"; \ 
+          robot extract --method $method --input ontologies/$prefix.owl --term-file terms_$prefix.txt --intermediates $inter \
           --annotate-with-source true --output extracted_$prefix.ttl; \
           fi; \
           done < "ontologies.txt"
