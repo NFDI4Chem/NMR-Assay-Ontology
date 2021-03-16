@@ -85,8 +85,8 @@ jobs:
       - name: merge extracted terms into  merged.ttl 
         run: |
           cd .github/workflows/robot_extract     
-          robot merge --inputs "extracted_*.owl" --output merged.owl
-          robot convert --input merged.owl --output merged.ttl 
+          robot merge --inputs "extracted_*.ttl" --output merged.ttl
+        # robot convert --input merged.owl --output merged.ttl 
 
       - uses: actions/upload-artifact@v2
         with:
