@@ -1,6 +1,6 @@
 ro http://purl.obolibrary.org/obo/ro.owl BOT minimal
 iao http://purl.obolibrary.org/obo/iao.owl BOT minimal
-uo http://purl.obolibrary.org/obo/uo.owl STAR minimal
+uo http://purl.obolibrary.org/obo/uo.owl BOT minimal
 obi http://purl.obolibrary.org/obo/obi.owl BOT minimal
 apollo_sv http://purl.obolibrary.org/obo/apollo_sv.owl BOT minimal
 chmo http://purl.obolibrary.org/obo/chmo.owl BOT minimal
