@@ -89,8 +89,9 @@ jobs:
       - name: merge extracted terms into  merged.ttl 
         run: |
           cd .github/workflows/robot_extract     
-          robot merge --inputs "extracted_*.ttl" --output merged.ttl -v
+          robot merge --inputs "extracted_*.ttl" --output merged.ttl --include-annotations true -v
         # robot convert --input merged.owl --output merged.ttl 
+        # If you would like to merge the ontology annotations from several inputs, add --include-annotations true.
 
       - uses: actions/upload-artifact@v2
         with:
