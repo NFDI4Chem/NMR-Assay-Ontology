@@ -1,3 +1,4 @@
+bfo http://purl.obolibrary.org/obo/bfo.owl BOT minimal
 ro http://purl.obolibrary.org/obo/ro.owl BOT minimal
 iao http://purl.obolibrary.org/obo/iao.owl BOT minimal
 uo http://purl.obolibrary.org/obo/uo.owl BOT minimal
