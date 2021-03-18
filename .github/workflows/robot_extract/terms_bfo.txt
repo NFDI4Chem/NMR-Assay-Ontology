@@ -1,1 +1,17 @@
+http://purl.obolibrary.org/obo/BFO_0000001  # Class: entity
+http://purl.obolibrary.org/obo/BFO_0000002  # Class: continuant
+http://purl.obolibrary.org/obo/BFO_0000003  # Class: occurrent
+http://purl.obolibrary.org/obo/BFO_0000004  # Class: independent continuant
+http://purl.obolibrary.org/obo/BFO_0000015  # Class: process
+http://purl.obolibrary.org/obo/BFO_0000031  # Class: generically dependent continuant
+http://purl.obolibrary.org/obo/BFO_0000040  # Class: material entity
+http://purl.obolibrary.org/obo/BFO_0000020  # Class: specifically dependent continuant
 http://purl.obolibrary.org/obo/BFO_0000019  # Class: quality
+http://purl.obolibrary.org/obo/BFO_0000017  # Class: realizable entity
+http://purl.obolibrary.org/obo/BFO_0000016  # Class: disposition
+http://purl.obolibrary.org/obo/BFO_0000034  # Class: function
+http://purl.obolibrary.org/obo/BFO_0000023  # Class: role
+
+
+
+
