@@ -1,16 +1,18 @@
 http://purl.obolibrary.org/obo/OBI_0000067  # Class: evaluant role
 http://purl.obolibrary.org/obo/OBI_0000260  # Class: plan
 http://purl.obolibrary.org/obo/OBI_0000272  # Class: protocol
-http://purl.obolibrary.org/obo/OBI_0000293  # ObjectProperty: has_specified_input
-http://purl.obolibrary.org/obo/OBI_0000299  # ObjectProperty: has_specified_output
-http://purl.obolibrary.org/obo/OBI_0000304  # ObjectProperty: is_manufactured_by
 http://purl.obolibrary.org/obo/OBI_0000566  # Class: NMR instrument
 http://purl.obolibrary.org/obo/OBI_0000578  # Class: NMR sample tube
 http://purl.obolibrary.org/obo/OBI_0000623  # Class: NMR spectroscopy assay
 http://purl.obolibrary.org/obo/OBI_0000654  # Class: device setting
 http://purl.obolibrary.org/obo/OBI_0000835  # Class: manufacturer
 http://purl.obolibrary.org/obo/OBI_0000968  # Class: device
-http://purl.obolibrary.org/obo/OBI_0001927  # ObjectProperty: specifies value of
 http://purl.obolibrary.org/obo/OBI_0001933  # Class: value specification
+http://purl.obolibrary.org/obo/OBI_0001930  # Class: categorical value specification
+http://purl.obolibrary.org/obo/OBI_0000293  # ObjectProperty: has_specified_input
+http://purl.obolibrary.org/obo/OBI_0000299  # ObjectProperty: has_specified_output
+http://purl.obolibrary.org/obo/OBI_0000304  # ObjectProperty: is_manufactured_by
+http://purl.obolibrary.org/obo/OBI_0001938  # ObjectProperty: has value specification
+http://purl.obolibrary.org/obo/OBI_0001927  # ObjectProperty: specifies value of
 http://purl.obolibrary.org/obo/OBI_0001937  # DatatypeProperty: has specified numeric value
 http://purl.obolibrary.org/obo/OBI_0002815  # DatatypeProperty: has representation
