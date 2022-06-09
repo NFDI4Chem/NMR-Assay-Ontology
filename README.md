@@ -1,6 +1,6 @@
 # NMR-Assay-Ontology
 
-
+This repository is makred as archived, as the work for it has been put on hold for now.
 
 ## [Actions Workflows](https://github.com/NFDI4Chem/NMR-Assay-Ontology/actions)
 In order to start developing an NMR-Assay-Ontology based on the [draft T-box](https://app.diagrams.net/#G1QopwpmihR1fCKU0Szhjv2T94zCD0lOGR) we are establish a few automated github, mainly based on ROBOT.
